@@ -1,0 +1,239 @@
+V "GNAT Lib v2017"
+A -O2
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwe
+A -gnatyg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U posix.mutexes%b	posix-mutexes.adb	f13018b1 NE OO PK IU
+W posix%s		posix.adb		posix.ali
+W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
+
+U posix.mutexes%s	posix-mutexes.ads	b1b21d04 EE OO PF PK IU
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W posix%s		posix.adb		posix.ali
+W posix.c%s		posix-c.adb		posix-c.ali
+W system%s		system.ads		system.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-mutexes.ads	20170516104058 4481063c posix.mutexes%s
+D posix-mutexes.adb	20170516104059 5bc51019 posix.mutexes%b
+D system.ads		20170516105953 6326c08a system%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-secsta.ads		20170516105955 9751b57e system.secondary_stack%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20170516105954 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 9 posix.ads
+43K9*POSIX 642e10 12|37r6 38r9 111r22 116r23 123r45 125r5 13|39r6 41r14 43r8
+. 44r8 343r5
+255I9*Error_Code<integer> 13|325r32
+283N4*EBUSY 13|321r15
+358N4*Operation_Not_Supported 13|162r29
+X 10 posix-c.ads
+42K15*C 2642e12 12|37w12 111r28 116r29 123r51 13|43r14
+60I9*int<integer> 13|53r49 67r49 82r24 82r36 88r24 101r17 101r29 105r45 123r18
+. 123r30 127r53 146r26 146r38 151r24 174r21 174r33 183r38 192r28 192r40 197r24
+. 210r44 240r46 253r31 256r21 257r37 265r24 268r13 278r28 278r40 284r24 295r40
+. 308r40 312r25 334r40
+248N4*PTHREAD_PRIO_INHERIT 13|129r31 157r22
+250N4*PTHREAD_PRIO_NONE 13|128r34 155r19
+252N4*PTHREAD_PRIO_PROTECT 13|130r35 159r22
+253N4*PTHREAD_PROCESS_SHARED 13|92r23 106r15
+254N4*PTHREAD_PROCESS_PRIVATE 13|107r16
+497A9*pthread_mutex_t(60I9)<integer> 12|116r31 123r53 13|209r22 240r22
+505A9*pthread_mutexattr_t(60I9)<integer> 12|111r30 13|46r49 53r21 67r21 100r21
+. 122r21 173r21
+1208a4*pthread_mutex_destroy_LINKNAME{string} 13|242r6
+1210a4*pthread_mutex_getprioceiling_LINKNAME{string} 13|280r6
+1212a4*pthread_mutex_init_LINKNAME{string} 13|211r42
+1213a4*pthread_mutex_lock_LINKNAME{string} 13|296r42
+1214a4*pthread_mutex_setprioceiling_LINKNAME{string} 13|259r6
+1216a4*pthread_mutex_trylock_LINKNAME{string} 13|309r45
+1218a4*pthread_mutex_unlock_LINKNAME{string} 13|336r6
+1219a4*pthread_mutexattr_destroy_LINKNAME{string} 13|69r6
+1221a4*pthread_mutexattr_getprioceiling_LINKNAME{string} 13|194r9
+1223a4*pthread_mutexattr_getprotocol_LINKNAME{string} 13|148r6
+1225a4*pthread_mutexattr_getpshared_LINKNAME{string} 13|84r6
+1227a4*pthread_mutexattr_init_LINKNAME{string} 13|55r6
+1229a4*pthread_mutexattr_setprioceiling_LINKNAME{string} 13|176r6
+1231a4*pthread_mutexattr_setprotocol_LINKNAME{string} 13|125r6
+1233a4*pthread_mutexattr_setpshared_LINKNAME{string} 13|103r6
+X 11 posix-implementation.ads
+42K15*Implementation 389e25 13|39w12 44r14
+90U14*Raise_POSIX_Error 13|162s10 325s13
+122U14*Check_NZ 13|59s7 73s7 90s7 113s7 136s7 153s7 182s7 199s7 217s7 223s7
+. 246s7 267s7 286s7 300s7 340s7
+127V13*Not_Implemented_Neg_One{10|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{10|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{10|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{10|60I9} 141i<c,notsup_direct>22
+X 12 posix-mutexes.ads
+38K15*Mutexes 9|43k9 12|109E9 125l11 125e18 13|41b20 343l11 343t18
+59R9*Mutex 91r21 93r37 94r32 95r35 115c9 119e14 13|214r18 221r37 230r32 244r35
+60P9*Mutex_Descriptor 94r46 98r21 101r39 104r24 105r28 106r26 123c9 124r26
+. 13|230r46 255r15 262r21 277r15 282r39 295r15 298r24 308r15 311r27 334r15
+. 338r26
+62R9*Attributes 63r40 64r38 66r40 69r26 79r24 82r14 85r28 87r42 92r14 110c9
+. 114e14 13|57r40 71r38 86r40 110r21 133r22 150r40 179r22 196r42 215r14
+63U14*Initialize 63=26 13|57b14 60l8 60t18
+63r26 Attr{62R9} 13|57b26 59m41 59r41
+64U14*Finalize 64=24 13|71b14 74l8 74t16
+64r24 Attr{62R9} 13|71b24 73m44 73r44
+66V13*Get_Process_Shared{boolean} 66>33 13|86b13 93l8 93t26
+66r33 Attr{62R9} 13|86b33 91r10
+68U14*Set_Process_Shared 69=7 70>7 13|109b14 115l8 115t26
+69r7 Attr{62R9} 13|110b7 114m10 114r10
+70b7 Is_Shared{boolean} 13|111b7 114r50
+72I12*Ceiling_Priority{integer} 86r21 88r13 99r21 100r25 102r13 13|180r22
+. 196r61 201r15 263r21 264r25 269r22 283r14 287r14
+73I9*Locking_Policy<short_short_integer> 74r39 75r36 76r40 80r17 83r13 13|127r34
+. 134r18 150r59
+74i4*No_Priority_Inheritance{73I9} 13|128r7 156r17 164r17
+75i4*Highest_Blocked_Task{73I9} 13|129r7 158r17
+76i4*Highest_Ceiling_Priority{73I9} 13|130r7 160r17
+78U14*Set_Locking_Policy 79=7 80>7 13|132b14 138l8 138t26
+79r7 Attr{62R9} 13|133b8 137m10 137r10
+80i7 Locking{73I9} 13|134b8 137r51
+81V13*Get_Locking_Policy{73I9} 82>7 13|150b13 166l8 166t26
+82r7 Attr{62R9} 13|150b33 154r9
+84U14*Set_Ceiling_Priority 85=7 86>7 13|178b14 184l8 184t28
+85r7 Attr{62R9} 13|179b8 183m10 183r10
+86i7 New_Ceiling{72I12} 13|180b8 183r43
+87V13*Get_Ceiling_Priority{72I12} 87>35 13|196b13 202l8 202t28
+87r35 Attr{62R9} 13|196b35 200r10
+90U14*Initialize 91=7 92>7 13|213b14 219l8 219t18
+91r7 M{59R9} 13|214b7 218m10 218r10
+92r7 Attr{62R9} 13|215b7 218r36
+93U14*Initialize 93=26 13|221b14 224l8 224t18
+93r26 M{59R9} 13|221b26 223m37 223r37
+94V13*Descriptor_Of{60P9} 94>28 13|230b13 233l8 233t21
+94r28 M{59R9} 13|230b28 232r14
+95U14*Finalize 95=24 13|244b14 247l8 247t16
+95r24 M{59R9} 13|244b24 246m40 246r40
+97U14*Set_Ceiling_Priority 98>7 99>7 100<7 13|261b14 270l8 270t28
+98p7 M{60P9} 13|262b7 268r10
+99i7 New_Ceiling{72I12} 13|263b7 268r18
+100i7 Old_Ceiling{72I12} 13|264b7 269m7
+101V13*Get_Ceiling_Priority{72I12} 101>35 13|282b13 288l8 288t28
+101p35 M{60P9} 13|282b35 286r47
+104U14*Lock 104>20 13|298b14 301l8 301t12
+104p20 M{60P9} 13|298b20 300r37
+105V14*Try_Lock{boolean} 105>24 13|311b13 327l8 327t16
+105p24 M{60P9} 13|311b23 312r55
+106U14*Unlock 106>22 13|338b14 341l8 341t14
+106p22 M{60P9} 13|338b22 340r39
+109R9 Dummy 109e36 113r11 118r11
+111a7*Attr{10|505A9} 13|59m46 73m49 91m15 114m15 137m15 154m14 183m15 200m15
+. 218m41
+113r7*D{109R9}
+116a7*Mutex{10|497A9} 13|218m12 223m39 232m16 246m42
+118r7*D{109R9}
+X 13 posix-mutexes.adb
+46P9 Mutexattr_Descriptor(10|505A9) 81r14 145r14 191r14 210r15
+52V13 pthread_mutexattr_init{10|60I9} 53^7 54b<c,pthread_mutexattr_init>22
+. 59s17
+53p7 attr(10|505A9)
+66V13 pthread_mutexattr_destroy{10|60I9} 67^7 68b<c,pthread_mutexattr_destroy>22
+. 73s17
+67p7 attr(10|505A9)
+80V13 pthread_mutexattr_getpshared{10|60I9} 81>7 82^7 83b<c,pthread_mutexattr_getpshared>22
+. 90s17
+81p7 attr{46P9}
+82p7 pshared(10|60I9)
+88i7 Result{10|60I9} 91m38 91r38 92r14
+99V13 pthread_mutexattr_setpshared{10|60I9} 100^7 101>7 102b<c,pthread_mutexattr_setpshared>22
+. 113s17
+100p7 attr(10|505A9)
+101i7 pshared{10|60I9}
+105a4 To_pshared(10|60I9) 114r38
+121V13 pthread_mutexattr_setprotocol{10|60I9} 122^7 123>7 124b<c,pthread_mutexattr_setprotocol>22
+. 136s17
+122p7 attr(10|505A9)
+123i7 protocol{10|60I9}
+127a4 To_C_Policy(10|60I9) 137r38
+144V13 pthread_mutexattr_getprotocol{10|60I9} 145>7 146^7 147b<c,pthread_mutexattr_getprotocol>22
+. 153s17
+145p7 attr{46P9}
+146p7 value_ptr(10|60I9)
+151i7 Result{10|60I9} 154m37 154r37 155r10 157r13 159r13
+172V13 pthread_mutexattr_setprioceiling{10|60I9} 173^7 174>7 175b<c,pthread_mutexattr_setprioceiling>22
+. 182s17
+173p7 attr(10|505A9)
+174i7 prioceiling{10|60I9}
+190V13 pthread_mutexattr_getprioceiling{10|60I9} 191>7 192^7 193b<c,pthread_mutexattr_getprioceiling>25
+. 199s17
+191p7 attr{46P9}
+192p7 prioceiling(10|60I9)
+197i7 Result{10|60I9} 200m38 200r38 201r33
+208V13 pthread_mutex_init{10|60I9} 209^7 210>7 211b<c,pthread_mutex_init>22
+. 217s17 223s17
+209p7 mutex(10|497A9)
+210p7 attr{46P9}
+239V13 pthread_mutex_destroy{10|60I9} 240^7 241b<c,pthread_mutex_destroy>22
+. 246s17
+240p7 mutex(10|497A9)
+253P9 int_ptr(10|60I9) 257r21
+254V13 pthread_mutex_setprioceiling{10|60I9} 255>7 256>7 257>7 258b<c,pthread_mutex_setprioceiling>22
+. 267s17
+255p7 mutex{12|60P9}
+256i7 prioceiling{10|60I9}
+257p7 old_ceiling{253P9}
+265i7 Result{10|60I9} 268m32 268r32 269r40
+276V13 pthread_mutex_getprioceiling{10|60I9} 277>7 278^7 279b<c,pthread_mutex_getprioceiling>22
+. 286s17
+277p7 mutex{12|60P9}
+278p7 prioceiling(10|60I9)
+284i7 Result{10|60I9} 286m50 286r50 287r32
+294V13 pthread_mutex_lock{10|60I9} 295>7 296b<c,pthread_mutex_lock>22 300s17
+295p7 mutex{12|60P9}
+307V13 pthread_mutex_trylock{10|60I9} 308>7 309b<c,pthread_mutex_trylock>22
+. 312s32
+308p7 mutex{12|60P9}
+312i7 Result{10|60I9} 317r12 325r44
+333V13 pthread_mutex_unlock{10|60I9} 334>7 335b<c,pthread_mutex_unlock>22
+. 340s17
+334p7 mutex{12|60P9}
+

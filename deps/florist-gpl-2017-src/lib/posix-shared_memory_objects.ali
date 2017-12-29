@@ -1,0 +1,165 @@
+V "GNAT Lib v2017"
+A -O2
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwe
+A -gnatyg
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U posix.shared_memory_objects%b  posix-shared_memory_objects.adb  ad4e8e9c NE OO PK IU
+W posix%s		posix.adb		posix.ali
+W posix.c%s		posix-c.adb		posix-c.ali
+W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
+W posix.permissions%s	posix-permissions.adb	posix-permissions.ali
+W posix.permissions.implementation%s  posix-permissions-implementation.adb  posix-permissions-implementation.ali
+W unchecked_conversion%s
+
+U posix.shared_memory_objects%s  posix-shared_memory_objects.ads  84a1ba87 EE NE OO PK IU
+W posix%s		posix.adb		posix.ali
+W posix.io%s		posix-io.adb		posix-io.ali
+W posix.permissions%s	posix-permissions.adb	posix-permissions.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-io.ads		20170516104058 0235a363 posix.io%s
+D posix-permissions.ads	20170516104058 501242a1 posix.permissions%s
+D posix-permissions-implementation.ads  20170516104058 2f51ed79 posix.permissions.implementation%s
+D posix-process_identification.ads  20170516104058 6458fdd5 posix.process_identification%s
+D posix-shared_memory_objects.ads  20170516104058 1a0c0922 posix.shared_memory_objects%s
+D posix-shared_memory_objects.adb  20170516104058 85f1b314 posix.shared_memory_objects%b
+D system.ads		20170516105953 6326c08a system%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 8 i-c.ads
+47M9*unsigned_char
+X 9 posix.ads
+43K9*POSIX 642e10 16|39r6 40r6 41r9 44r24 45r24 46r24 46r52 47r24 47r48 48r13
+. 51r24 52r24 53r24 54r24 54r52 55r24 55r48 56r13 59r14 61r5 17|39r6 40r6
+. 41r6 44r14 46r8 47r8 48r8 52r34 53r7 54r7 55r7 68r24 69r24 70r24 70r52
+. 71r24 71r48 72r14 75r16 78r17 92r24 93r24 94r24 95r24 95r52 96r24 96r48
+. 97r14 100r16 103r17 117r14 126r5
+143E9*Signal_Masking 143e65 16|47r30 55r30 17|71r30 96r30
+143n40*RTS_Signals{143E9} 16|47r54 55r54 17|71r54 96r54
+145E9*POSIX_Character<character>
+150e4*NUL{145E9} 17|74r46 99r46 118r46
+183A9*POSIX_String(145E9)<integer> 16|44r30 51r30 59r20 17|68r30 74r23 92r30
+. 99r23 117r20 118r23
+214R9*Option_Set 610e17 17|80r18 105r18
+215V13*Empty_Set{214R9} 16|46s61 54s61 17|70s61 95s61
+601M9 Bits 17|50r49 52r57
+609m10*Option{601M9} 17|80r39 105r39
+X 10 posix-c.ads
+42K15*C 2642e12 17|39w12 46r14
+60I9*int<integer> 17|50r55 63r15 64r30 83r10 108r10 119r52
+98E12*char{9|145E9}
+99P9*char_ptr(98E12) 17|62r15 119r35
+224N4*O_CREAT 17|105r71
+229N4*O_RDONLY 17|53r30
+230N4*O_RDWR 17|55r30
+234N4*O_WRONLY 17|54r30
+431M9*mode_t 17|64r15
+1296a4*shm_open_LINKNAME{string} 17|65r32
+1298a4*shm_unlink_LINKNAME{string} 17|120r37
+X 11 posix-implementation.ads
+42K15*Implementation 389e25 17|40w12 47r14
+87A12*Signal_Mask{22|53A9} 17|73r26 98r26
+103U14*Check 17|122s7
+105V13*Check{10|60I9} 17|78s43 103s43
+127V13*Not_Implemented_Neg_One{10|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{10|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{10|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{10|60I9} 141i<c,notsup_direct>22
+225U14*Mask_Signals 17|77s7 102s7
+246U14*Check_NNeg_And_Restore_Signals 17|82s7 107s7
+X 12 posix-io.ads
+45K15*IO 268e13 16|39w12 45r30 46r30 46r58 48r19 52r30 54r30 54r58 56r19
+. 17|52r40 53r13 54r13 55r13 69r30 70r30 70r58 72r20 75r22 78r23 93r30 95r30
+. 95r58 97r20 100r22 103r23
+47I9*File_Descriptor<integer> 16|48r22 56r22 17|72r23 75r25 78r26 97r23 100r25
+. 103r26
+59E9*File_Mode 59e57 16|45r33 52r33 17|52r43 69r33 93r33
+59n23*Read_Only{59E9} 17|53r16
+59n34*Write_Only{59E9} 17|54r16
+59n46*Read_Write{59E9} 17|55r16
+60R9*Open_Option_Set<9|214R9> 16|46r33 54r33
+X 13 posix-permissions.ads
+38K15*Permissions 81e22 16|40w12 53r30 17|41r12 48r14 94r30
+46A9*Permission_Set(boolean)<40E9> 16|53r42 17|94r42
+X 14 posix-permissions-implementation.ads
+40K27*Implementation 60e37 17|41w24 48r26
+57V13*Form_C_Permission{10|431M9} 17|106s10
+X 16 posix-shared_memory_objects.ads
+41K15*Shared_Memory_Objects 9|43k9 16|61l11 61e32 17|44b20 126l11 126t32
+43V13*Open_Shared_Memory{12|47I9} 44>7 45>7 46>7 47>7 17|67b13 85l8 85t26
+44a7 Name{9|183A9} 17|68b7 74r39
+45e7 Mode{12|59E9} 17|69b7 80r62
+46r7 Options{12|60R9} 17|70b7 80r30
+47e7 Masked_Signals{9|143E9} 17|71b7 77r21 83r24
+50V13*Open_Or_Create_Shared_Memory{12|47I9} 51>7 52>7 53>7 54>7 55>7 17|91b13
+. 110l8 110t36
+51a7 Name{9|183A9} 17|92b7 99r39
+52e7 Mode{12|59E9} 17|93b7 105r62
+53a7 Permissions{13|46A9} 17|94b7 106r29
+54r7 Options{12|60R9} 17|95b7 105r30
+55e7 Masked_Signals{9|143E9} 17|96b7 102r21 108r24
+58U14*Unlink_Shared_Memory 59>7 17|116b14 124l8 124t28
+59a7 Name{9|183A9} 17|117b7 118r39
+X 17 posix-shared_memory_objects.adb
+50V13 To_int[35|20]{10|60I9} 80s10 105s10
+52a4 C_File_Mode(9|601M9) 80r49 105r49
+61V13 shm_open{10|60I9} 62>7 63>7 64>7 65b<c,shm_open>22 78s50 103s50
+62p7 name{10|99P9}
+63i7 oflag{10|60I9}
+64m7 mode{10|431M9}
+73a7 Old_Mask{11|87A12} 77m37 77r37 81m14 81r14 83m40 83r40
+74a7 Name_With_NUL=74:44{9|183A9} 79r10 79r25
+75i7 Result{12|47I9} 78m7 83r15 84r14
+98a7 Old_Mask{11|87A12} 102m37 102r37 106m44 106r44 108m40 108r40
+99a7 Name_With_NUL=99:44{9|183A9} 104r10 104r25
+100i7 Result{12|47I9} 103m7 108r15 109r14
+118a7 Name_With_NUL=118:44{9|183A9} 123r10 123r25
+119V16*shm_unlink{10|60I9} 119>28 120b<c,shm_unlink>25 122s14
+119p28 name{10|99P9}
+X 22 s-intman.ads
+53A9*Interrupt_Mask<25|156A9>
+X 25 s-osinte.ads
+60M12*unsigned_char{8|47M9}
+156A9*sigset_t(60M12)
+X 35 unchconv.ads
+20v10*Unchecked_Conversion 17|42w6 50r27
+

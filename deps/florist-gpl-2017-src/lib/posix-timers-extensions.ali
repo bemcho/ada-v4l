@@ -1,0 +1,85 @@
+V "GNAT Lib v2017"
+A -O2
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwe
+A -gnatyg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U posix.timers.extensions%b  posix-timers-extensions.adb  accb6e1a NE OO PK IU
+W posix.timers%s	posix-timers.adb	posix-timers.ali
+
+U posix.timers.extensions%s  posix-timers-extensions.ads  b3089ad7 EE NE OO PK IU
+W posix.timers%s	posix-timers.adb	posix-timers.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-taside.ads		20170516105954 c6417f71 ada.task_identification%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-implementation-ok_signals.ads  20171229062448 ae9904fa posix.implementation.ok_signals%s
+D posix-process_identification.ads  20170516104058 6458fdd5 posix.process_identification%s
+D posix-signals.ads	20170516104058 6931d508 posix.signals%s
+D posix-timers.ads	20170516104059 0e6e36c1 posix.timers%s
+D posix-timers-extensions.ads  20170516104058 bd66ac16 posix.timers.extensions%s
+D posix-timers-extensions.adb  20171229062448 11adc20c posix.timers.extensions%b 1:posix-timers-extensions.gpb
+D system.ads		20170516105953 6326c08a system%s
+D s-atacco.ads		20170516105954 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-multip.ads		20170516105948 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-secsta.ads		20170516105955 9751b57e system.secondary_stack%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stausa.ads		20170516105954 017a0a05 system.stack_usage%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-stposu.ads		20170516105949 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20170516105949 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20170516105952 2b3f8252 system.task_info%s
+D s-taspri.ads		20170516105950 f40ac08d system.task_primitives%s
+D s-taskin.ads		20170516105956 05d6152c system.tasking%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 10 posix.ads
+43K9*POSIX 642e10 17|37r9 46r5 18|34r14 49r5
+X 11 posix-c.ads
+60I9*int<integer>
+461I9*clockid_t<integer>
+X 12 posix-implementation.ads
+127V13*Not_Implemented_Neg_One{11|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{11|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{11|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{11|60I9} 141i<c,notsup_direct>22
+X 16 posix-timers.ads
+39K15*Timers 10|43k9 16|99e17 17|37r15 46r11 18|34r20 49r11
+41I9*Clock_ID<11|461I9> 17|39r35 18|40r35
+X 17 posix-timers-extensions.ads
+37K22*Extensions 16|39k15 17|46l18 46e28 18|34b27 49l18 49t28
+39V13*Clock_SGI_Fast{16|41I9} 18|40b13 47l8 47t22
+X 34 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

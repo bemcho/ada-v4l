@@ -1,0 +1,195 @@
+creating package POSIX_Options
+done generating posix-options.ads
+creating package POSIX_Limits
+done generating posix-limits.ads
+creating package POSIX
+missing: EAI_ADDRFAMILY
+missing: EAI_NODATA
+missing: TACCES
+missing: TADDRBUSY
+missing: TBADADDR
+missing: TBADDATA
+missing: TBADF
+missing: TBADFLAG
+missing: TBADNAME
+missing: TBADOPT
+missing: TBADQLEN
+missing: TBADSEQ
+missing: TBUFOVFLW
+missing: TFLOW
+missing: TINDOUT
+missing: TLOOK
+missing: TNOADDR
+missing: TNODATA
+missing: TNODIS
+missing: TPROVMISMATCH
+missing: TNOREL
+missing: TNOSTRUCTYPE
+missing: TNOTSUPPORT
+missing: TNOUDERR
+missing: TOUTSTATE
+missing: TPROTO
+missing: TQFULL
+missing: TSTATECHNG
+missing: TRESADDR
+missing: TRESQLEN
+done generating posix.ads
+creating package POSIX.C
+missing: CLK_TCK
+missing: MAP_VARIABLE
+missing: MS_EINTR
+missing: PAGESIZE
+missing: PTHREAD_PRIO_INHERIT
+missing: PTHREAD_PRIO_NONE
+missing: PTHREAD_PRIO_PROTECT
+missing: TIMER_RELTIME
+missing: SC_PII_NET_SUPPORT
+missing: SC_POSIX_PII_NET_SUPPORT
+missing: blksize_t
+missing: blkcnt_t
+missing: MAX_SOCKADDR_EXT
+missing: AF_OSI
+missing: AF_ISO
+missing: PF_OSI
+missing: PF_ISO
+missing: MSG_MAXIOVLEN
+missing struct type: netbuf
+missing struct type: t_info
+missing struct type: t_opthdr
+missing struct type: t_bind
+missing struct type: t_optmgmt
+missing struct type: t_discon
+missing struct type: t_call
+missing struct type: t_unitdata
+missing struct type: t_uderr
+missing struct type: t_iovec
+missing struct type: t_kpalive
+missing: T_LISTEN
+missing: T_CONNECT
+missing: T_DATA
+missing: T_EXDATA
+missing: T_DISCONNECT
+missing: T_UDERR
+missing: T_ORDREL
+missing: T_GODATA
+missing: T_GOEXDATA
+missing: T_EVENTS
+missing: T_MORE
+missing: T_EXPEDITED
+missing: T_PUSH
+missing: T_NEGOTIATE
+missing: T_CHECK
+missing: T_DEFAULT
+missing: T_SUCCESS
+missing: T_FAILURE
+missing: T_CURRENT
+missing: T_PARTSUCCESS
+missing: T_READONLY
+missing: T_NOTSUPPORT
+missing: T_RAW
+missing: T_COTS
+missing: T_COTS_ORD
+missing: T_CLTS
+missing: T_SENDZERO
+missing: SENDZERO
+missing: T_XPG4_1
+missing: XPG4_1
+missing: T_BIND
+missing: T_OPTMGMT
+missing: T_CALL
+missing: T_DIS
+missing: T_UNITDATA
+missing: T_UDERROR
+missing: T_INFO
+missing: T_KUNITDATA
+missing: T_ADDR
+missing: T_OPT
+missing: T_UDATA
+missing: T_ALL
+missing: T_UNINIT
+missing: T_UNBND
+missing: T_IDLE
+missing: T_OUTCON
+missing: T_INCON
+missing: T_DATAXFER
+missing: T_OUTREL
+missing: T_INREL
+missing: T_YES
+missing: T_NO
+missing: T_UNUSED
+missing: T_NULL
+missing: T_ABSREQ
+missing: T_INFINITE
+missing: T_INVALID
+missing: XTI_GENERIC
+missing: XTI_DEBUG
+missing: XTI_LINGER
+missing: XTI_RCVBUF
+missing: XTI_RCVLOWAT
+missing: XTI_SNDBUF
+missing: XTI_SNDLOWAT
+missing struct type: t_linger
+missing: T_UNSPEC
+missing: T_ALLOPT
+missing: INET_TCP
+missing: TCP_KEEPALIVE
+missing: T_GARBAGE
+missing: INET_UDP
+missing: UDP_CHECKSUM
+missing: INET_IP
+missing: IP_REUSEADDR
+missing: IP_DONTROUTE
+missing: IP_BROADCAST
+missing: T_ROUTINE
+missing: T_PRIORITY
+missing: T_IMMEDIATE
+missing: T_FLASH
+missing: T_OVERRIDEFLASH
+missing: T_CRITIC_ECP
+missing: T_INETCONTROL
+missing: T_NETCONTROL
+missing: T_NOTOS
+missing: T_LDELAY
+missing: T_HITHRPT
+missing: T_HIREL
+missing function : t_accept
+missing function : t_alloc
+missing function : t_bind
+missing function : t_blocking
+missing function : t_close
+missing function : t_connect
+missing function : t_error
+missing function : t_free
+missing function : t_getinfo
+missing function : t_getprotaddr
+missing function : t_getstate
+missing function : t_listen
+missing function : t_look
+missing function : t_nonblocking
+missing function : t_open
+missing function : t_optmgmt
+missing function : t_rcv
+missing function : t_rcvconnect
+missing function : t_rcvdis
+missing function : t_rcvrel
+missing function : t_rcvreldata
+missing function : t_rcvudata
+missing function : t_rcvuderr
+missing function : t_rcvv
+missing function : t_rcvvudata
+missing function : t_snd
+missing function : t_snddis
+missing function : t_sndudata
+missing function : t_sndrel
+missing function : t_sndreldata
+missing function : t_sndv
+missing function : t_sndvudata
+missing function : t_strerror
+missing function : t_sync
+missing function : t_unbind
+missing: IP_RECVDSTADDR
+missing: TCP_KEEPALIVE
+missing: TCP_MAXRXT
+missing: TCP_STDURG
+missing: INFTIM
+done generating posix-c.ads

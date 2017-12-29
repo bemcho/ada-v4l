@@ -1,0 +1,194 @@
+V "GNAT Lib v2017"
+A -O2
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwe
+A -gnatyg
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U posix.memory_mapping%b  posix-memory_mapping.adb  3b19c602 NE OO PK IU
+W posix%s		posix.adb		posix.ali
+W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
+W unchecked_conversion%s
+
+U posix.memory_mapping%s  posix-memory_mapping.ads  c0c15bb3 EE OO PK IU
+W ada.tags%s		a-tags.adb		a-tags.ali
+W posix%s		posix.adb		posix.ali  EA
+W posix.c%s		posix-c.adb		posix-c.ali
+W posix.io%s		posix-io.adb		posix-io.ali
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-io.ads		20170516104058 0235a363 posix.io%s
+D posix-memory_mapping.ads  20170516104058 b5a83b01 posix.memory_mapping%s
+D posix-memory_mapping.adb  20170516104058 aaea6d8f posix.memory_mapping%b
+D posix-permissions.ads	20170516104058 501242a1 posix.permissions%s
+D posix-process_identification.ads  20170516104058 6458fdd5 posix.process_identification%s
+D system.ads		20170516105953 6326c08a system%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 9 posix.ads
+43K9*POSIX 642e10 13|39w6 40r6 41r6 44r23 45r9 47r8 49r35 54r32 58r33 68r20
+. 69r20 76r20 77r20 89r43 101r48 103r48 105r48 107r45 109r45 111r46 114r56
+. 116r56 119r31 120r5 14|39r6 42r14 44r8 72r20 73r20 99r20 100r20 168r5
+71I9*IO_Count<long_integer> 13|69r26 77r26 14|73r26 100r26
+214R9*Option_Set 610e17 13|49r41 54r38 58r39 89r49 101r26 103r26 105r26 107r23
+. 109r23 111r24 114r34 116r34 119r9 14|80r14 81r14 81r45 107r15 108r15 147r14
+. 165r39
+215V13*Empty_Set{214R9} 13|112s59
+601M9 Bits
+609m10*Option{601M9} 13|101m38 103m38 105m38 107m35 109m35 111m36 114m46
+. 116m46 119m21 14|80r38 81r35 81r67 107r39 108r36 147r38 165r60
+X 10 posix-c.ads
+42K15*C 2642e12 13|40w12 47r14 101r54 103r54 105r54 107r51 109r51 111r52
+. 114r62 116r62 119r37
+60I9*int<integer> 14|60r14 61r15 62r16 80r9 81r9 83r9 107r10 108r10 109r10
+. 126r31 143r17 143r29 147r9 161r18 161r30 165r34
+78I9*size_t<long_integer> 14|59r13 79r9 106r10 126r16 129r29 142r16 146r31
+. 160r16 165r17
+96I9*ptr_as_int<long_integer> 14|48r32
+203N4*MAP_FAILED 14|51r58
+204N4*MAP_FILE 14|82r15 108r46
+205N4*MAP_FIXED 13|111r54
+208N4*MAP_PRIVATE 13|109r53
+209N4*MAP_SHARED 13|107r53
+214N4*MS_ASYNC 13|116r64
+215N4*MS_INVALIDATE 13|119r39
+216N4*MS_SYNC 13|114r64
+240N4*PROT_EXEC 13|105r56
+242N4*PROT_READ 13|101r56
+243N4*PROT_WRITE 13|103r56
+423I9*off_t<long_integer> 14|63r13 84r9 110r10
+1157a4*mmap_LINKNAME{string} 14|64r28
+1159a4*mprotect_LINKNAME{string} 14|144r35
+1177a4*msync_LINKNAME{string} 14|162r32
+1183a4*munmap_LINKNAME{string} 14|127r33
+X 11 posix-implementation.ads
+42K15*Implementation 389e25 14|39w12 44r14
+90U14*Raise_POSIX_Error 14|86s10 112s10
+103U14*Check 14|129s7 146s7 164s7
+127V13*Not_Implemented_Neg_One{10|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{10|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{10|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{10|60I9} 141i<c,notsup_direct>22
+X 12 posix-io.ads
+45K15*IO 268e13 13|41w12 68r26 76r26 14|72r26 99r26
+47I9*File_Descriptor<integer> 13|68r29 76r29 14|72r29 99r29
+X 13 posix-memory_mapping.ads
+45K15*Memory_Mapping 9|43k9 13|100E4 120l11 120e25 14|42b20 168l11 168t25
+49R9*Protection_Options<9|214R9> 50r29 51r29 52r29 65r20 74r20 87r20
+50r4*Allow_Read{49R9} 100c4
+51r4*Allow_Write{49R9} 102c4
+52r4*Allow_Execute{49R9} 104c4
+54R9*Mapping_Options<9|214R9> 55r27 56r27 66r20 75r20
+55r4*Map_Shared{54R9} 106c4
+56r4*Map_Private{54R9} 108c4
+58R9*Location_Options<9|214R9> 59r30 60r30 67r20
+59r4*Exact_Address{58R9} 110c4
+60r4*Nearby_Address{58R9} 112c4
+62V13*Map_Memory{17|67M9} 63>7 64>7 65>7 66>7 67>7 68>7 69>7 14|66b13 89l8
+. 89t18
+63m7 First{17|67M9} 14|67b7 78r9
+64i7 Length{30|54I9} 14|68b7 79r17
+65r7 Protection{49R9} 14|69b7 80r26
+66r7 Mapping{54R9} 14|70b7 81r26
+67r7 Location{58R9} 14|71b7 81r57
+68i7 File{12|47I9} 14|72b7 83r14
+69i7 Offset{9|71I9} 14|73b7 84r16
+72V13*Map_Memory{17|67M9} 73>7 74>7 75>7 76>7 77>7 14|95b13 115l8 115t18
+73i7 Length{30|54I9} 14|96b7 106r18
+74r7 Protection{49R9} 14|97b7 107r27
+75r7 Mapping{54R9} 14|98b7 108r27
+76i7 File{12|47I9} 14|99b7 109r15
+77i7 Offset{9|71I9} 14|100b7 110r17
+80U14*Unmap_Memory 81>7 82>7 14|121b14 130l8 130t20
+81m7 First{17|67M9} 14|122b7 129r22
+82i7 Length{30|54I9} 14|123b7 129r37
+84U14*Change_Protection 85>7 86>7 87>7 14|136b14 148l8 148t25
+85m7 First{17|67M9} 14|137b7 146r24
+86i7 Length{30|54I9} 14|138b7 146r39
+87r7 Protection{49R9} 14|139b7 147r26
+89R9*Synchronize_Memory_Options<9|214R9> 90r38 91r38 92r38 97r17
+90r4*Wait_For_Completion{89R9} 97r47 113c4 14|157r47
+91r4*No_Wait_For_Completion{89R9} 115c4
+92r4*Invalidate_Cached_Data{89R9} 117c4
+94U14*Synchronize_Memory 95>7 96>7 97>7 14|154b14 166l8 166t26
+95m7 First{17|67M9} 14|155b7 165r10
+96i7 Length{30|54I9} 14|156b7 165r25
+97r7 Options{89R9} 14|157b7 165r51
+X 14 posix-memory_mapping.adb
+47V13 To_Address[34|20]{17|67M9} 50s46 51s46
+50m4 Zero_Address{17|67M9} 105r10
+51m4 Failure{17|67M9} 85r19 111r19
+57V13 mmap{17|67M9} 58>7 59>7 60>7 61>7 62>7 63>7 64b<c,mmap>22 77s17 104s17
+58m7 addr{17|67M9}
+59i7 len{10|78I9}
+60i7 prot{10|60I9}
+61i7 flags{10|60I9}
+62i7 fildes{10|60I9}
+63i7 off{10|423I9}
+75m7 Result{17|67M9} 77m7 85r10 88r14
+102m7 Result{17|67M9} 104m7 111r10 114r14
+124V16*munmap{10|60I9} 125>10 126>10 127b<c,munmap>25 129s14
+125m10 addr{17|67M9}
+126i10 len{10|78I9}
+140V16*mprotect{10|60I9} 141>10 142>10 143>10 144b<c,mprotect>25 146s14
+141m10 addr{17|67M9}
+142i10 len{10|78I9}
+143i10 prot{10|60I9}
+158V16*msync{10|60I9} 159>10 160>10 161>10 162b<c,msync>25 164s14
+159m10 address{17|67M9}
+160i10 len{10|78I9}
+161i10 flags{10|60I9}
+X 17 system.ads
+37K9*System 13|42w6 43r6 63r20 64r20 70r14 73r20 78r14 81r16 82r16 85r20
+. 86r20 95r17 96r17 14|45r8 48r44 50r28 51r28 58r14 63r27 67r20 68r20 74r14
+. 75r16 96r20 101r14 102r16 122r16 123r16 125r17 137r20 138r20 141r17 155r17
+. 156r17 159r20 17|156e11
+67M9*Address 13|63r27 70r21 78r21 81r23 85r27 95r24 14|48r51 50r35 51r35
+. 58r21 63r34 67r27 74r21 75r23 101r21 102r23 122r23 125r24 137r27 141r24
+. 155r24 159r27
+81V14*"="{boolean} 14|85r17 111r17
+X 30 s-stoele.ads
+42K16*Storage_Elements 13|43w13 64r27 73r27 82r23 86r27 96r24 14|68r27 96r27
+. 123r23 138r27 156r24 30|117e28
+54I9*Storage_Offset<long_integer> 13|64r44 73r44 82r40 86r44 96r41 14|68r44
+. 96r44 123r40 138r44 156r41
+X 34 unchconv.ads
+20v10*Unchecked_Conversion 14|40w6 48r10
+

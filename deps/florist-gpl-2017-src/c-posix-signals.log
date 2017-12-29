@@ -1,0 +1,134 @@
+WARNING: C library problem? sigfillset does not include zero
+nsigs: 65
+testing signals with default treatments
+testing signal:  1     SIGHUP ...works OK.
+testing signal:  2     SIGINT ...works OK.
+testing signal:  3    SIGQUIT ...works OK.
+testing signal:  4     SIGILL ...works OK.
+testing signal:  5    SIGTRAP ...works OK.
+testing signal:  6    SIGABRT ...works OK.
+testing signal:  7     SIGBUS ...works OK.
+testing signal:  8     SIGFPE ...works OK.
+testing signal:  9    SIGKILL ...cannot be caught
+testing signal: 10    SIGUSR1 ...works OK.
+testing signal: 11    SIGSEGV ...works OK.
+testing signal: 12    SIGUSR2 ...works OK.
+testing signal: 13    SIGPIPE ...works OK.
+testing signal: 14    SIGALRM ...works OK.
+testing signal: 15    SIGTERM ...works OK.
+testing signal: 16  SIGSTKFLT ...works OK.
+testing signal: 17    SIGCHLD ...works OK.
+testing signal: 18    SIGCONT ...works OK.
+testing signal: 19    SIGSTOP ...cannot be caught
+testing signal: 20    SIGTSTP ...works OK.
+testing signal: 21    SIGTTIN ...works OK.
+testing signal: 22    SIGTTOU ...works OK.
+testing signal: 23     SIGURG ...works OK.
+testing signal: 24    SIGXCPU ...works OK.
+testing signal: 25    SIGXFSZ ...works OK.
+testing signal: 26  SIGVTALRM ...works OK.
+testing signal: 27    SIGPROF ...works OK.
+testing signal: 28   SIGWINCH ...works OK.
+testing signal: 29      SIGIO ...works OK.
+testing signal: 30     SIGPWR ...works OK.
+testing signal: 31     SIGSYS ...works OK.
+testing signal: 32            ...cannot be caught
+testing signal: 33            ...cannot be caught
+testing signal: 34            ...works OK.
+testing signal: 35            ...works OK.
+testing signal: 36            ...works OK.
+testing signal: 37            ...works OK.
+testing signal: 38            ...works OK.
+testing signal: 39            ...works OK.
+testing signal: 40            ...works OK.
+testing signal: 41            ...works OK.
+testing signal: 42            ...works OK.
+testing signal: 43            ...works OK.
+testing signal: 44            ...works OK.
+testing signal: 45            ...works OK.
+testing signal: 46            ...works OK.
+testing signal: 47            ...works OK.
+testing signal: 48            ...works OK.
+testing signal: 49            ...works OK.
+testing signal: 50            ...works OK.
+testing signal: 51            ...works OK.
+testing signal: 52            ...works OK.
+testing signal: 53            ...works OK.
+testing signal: 54            ...works OK.
+testing signal: 55            ...works OK.
+testing signal: 56            ...works OK.
+testing signal: 57            ...works OK.
+testing signal: 58            ...works OK.
+testing signal: 59            ...works OK.
+testing signal: 60            ...works OK.
+testing signal: 61            ...works OK.
+testing signal: 62            ...works OK.
+testing signal: 63            ...works OK.
+testing signal: 64            ...works OK.
+testing signals without default treatments
+testing signal:  1     SIGHUP ...works OK.
+testing signal:  2     SIGINT ...works OK.
+testing signal:  3    SIGQUIT ...works OK.
+testing signal:  4     SIGILL ...works OK.
+testing signal:  5    SIGTRAP ...works OK.
+testing signal:  6    SIGABRT ...works OK.
+testing signal:  7     SIGBUS ...works OK.
+testing signal:  8     SIGFPE ...works OK.
+testing signal:  9    SIGKILL ...cannot be caught
+testing signal: 10    SIGUSR1 ...works OK.
+testing signal: 11    SIGSEGV ...works OK.
+testing signal: 12    SIGUSR2 ...works OK.
+testing signal: 13    SIGPIPE ...works OK.
+testing signal: 14    SIGALRM ...works OK.
+testing signal: 15    SIGTERM ...works OK.
+testing signal: 16  SIGSTKFLT ...works OK.
+testing signal: 17    SIGCHLD ...works OK.
+testing signal: 18    SIGCONT ...works OK.
+testing signal: 19    SIGSTOP ...cannot be caught
+testing signal: 20    SIGTSTP ...works OK.
+testing signal: 21    SIGTTIN ...works OK.
+testing signal: 22    SIGTTOU ...works OK.
+testing signal: 23     SIGURG ...works OK.
+testing signal: 24    SIGXCPU ...works OK.
+testing signal: 25    SIGXFSZ ...works OK.
+testing signal: 26  SIGVTALRM ...works OK.
+testing signal: 27    SIGPROF ...works OK.
+testing signal: 28   SIGWINCH ...works OK.
+testing signal: 29      SIGIO ...works OK.
+testing signal: 30     SIGPWR ...works OK.
+testing signal: 31     SIGSYS ...works OK.
+testing signal: 32            ...cannot be caught
+testing signal: 33            ...cannot be caught
+testing signal: 34            ...works OK.
+testing signal: 35            ...works OK.
+testing signal: 36            ...works OK.
+testing signal: 37            ...works OK.
+testing signal: 38            ...works OK.
+testing signal: 39            ...works OK.
+testing signal: 40            ...works OK.
+testing signal: 41            ...works OK.
+testing signal: 42            ...works OK.
+testing signal: 43            ...works OK.
+testing signal: 44            ...works OK.
+testing signal: 45            ...works OK.
+testing signal: 46            ...works OK.
+testing signal: 47            ...works OK.
+testing signal: 48            ...works OK.
+testing signal: 49            ...works OK.
+testing signal: 50            ...works OK.
+testing signal: 51            ...works OK.
+testing signal: 52            ...works OK.
+testing signal: 53            ...works OK.
+testing signal: 54            ...works OK.
+testing signal: 55            ...works OK.
+testing signal: 56            ...works OK.
+testing signal: 57            ...works OK.
+testing signal: 58            ...works OK.
+testing signal: 59            ...works OK.
+testing signal: 60            ...works OK.
+testing signal: 61            ...works OK.
+testing signal: 62            ...works OK.
+testing signal: 63            ...works OK.
+testing signal: 64            ...works OK.
+creating package POSIX.Implementation.OK_Signals
+done.

@@ -1,18 +1,41 @@
-with "../florist-gpl-2017-src/florist.gpr";
+with "deps/florist-gpl-2017-src/florist.gpr";
 
 project Adav4L is
 
-   type Boolean is
-      ("False", "True");
-   type Library_Type_Type is
-      ("relocatable", "static");
-   type Build_Type is
-      ("Debug", "Production");
    for Object_Dir use "obj";
    for Main use ("main.adb");
+   type Build_Type is
+      ("Debug", "Production");
    Build : Build_Type := external ("Build");
-   LIBRARY_TYPE : Library_Type_Type := external ("LIBRARY_TYPE");
-   THREADS : Boolean := external ("THREADS");
+   type Library_Type_Type is
+      ("relocatable", "static");
+   Library_Type : Library_Type_Type := external ("LIBRARY_TYPE");
+   type Boolean is
+      ("False", "True");
+   Threads : Boolean := external ("THREADS");
+
+   case Build is
+
+      when "Debug" =>
+
+      when "Production" =>
+
+         case Library_Type is
+
+            when "relocatable" =>
+
+            when "static" =>
+
+               case Threads is
+
+                  when "False" =>
+
+                  when "True" =>
+                     for Source_Dirs use ("src", "deps/include_v4l2");
+                     for Runtime ("ada") use "native";
+               end case;
+         end case;
+   end case;
 
    package Linker is
 
@@ -22,48 +45,22 @@ project Adav4L is
 
          when "Production" =>
 
-            case LIBRARY_TYPE is
+            case Library_Type is
 
                when "relocatable" =>
 
                when "static" =>
 
-                  case THREADS is
+                  case Threads is
 
                      when "False" =>
 
                      when "True" =>
-                        for Switches ("main.adb") use ("-lv4l2", "-g");
+                        for Switches ("ada") use ("-lv4l2", "-g");
                   end case;
             end case;
       end case;
    end Linker;
-
-   case Build is
-
-      when "Debug" =>
-         for Source_Dirs use ("src");
-
-      when "Production" =>
-
-         case LIBRARY_TYPE is
-
-            when "relocatable" =>
-               for Source_Dirs use ("src");
-
-            when "static" =>
-
-               case THREADS is
-
-                  when "False" =>
-                     for Source_Dirs use ("src");
-
-                  when "True" =>
-                     for Source_Dirs use ("src", "include_v4l2");
-                     for Runtime ("ada") use "native";
-               end case;
-         end case;
-   end case;
 
 end Adav4L;
 

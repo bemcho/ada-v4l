@@ -1,0 +1,165 @@
+V "GNAT Lib v2017"
+A -O2
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwe
+A -gnatyg
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U posix.calendar%b	posix-calendar.adb	1c546768 OO PK IU
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W posix%s		posix.adb		posix.ali
+W unchecked_conversion%s
+
+U posix.calendar%s	posix-calendar.ads	e044c1fe EE NE OO PK IU
+W calendar%s		calendar.ads		calendar.ali
+W posix%s		posix.adb		posix.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-calend.ads		20170516105954 2d5f01d4 ada.calendar%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D calendar.ads		20170516105950 2cb525cd calendar%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-calendar.ads	20170516104058 ccf1e433 posix.calendar%s
+D posix-calendar.adb	20170516104058 1a8a1d43 posix.calendar%b
+D system.ads		20170516105953 6326c08a system%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 2 a-calend.ads
+44I9*Time<213I9> 11|45r66 46r53 84r45 12|82r51 84r17 91r38
+50I12*Year_Number{integer} 11|50r48
+51I12*Month_Number{integer} 11|51r48
+52I12*Day_Number{integer} 11|52r48
+56O12*Day_Duration{duration} 11|53r48
+58V13*Clock{44I9} 12|75s32
+66V13*Year{50I12} 12|102s30
+67V13*Month{51I12} 12|111s17
+68V13*Day{52I12} 12|120s17
+69V13*Seconds{56O12} 12|129s17
+71U14*Split 12|143s10
+82V13*Time_Of{44I9} 12|52s9 53s9 156s32
+83i7 Year{50I12} 12|52r18 53r18
+84i7 Month{51I12} 12|52r32 53r32
+85i7 Day{52I12} 12|52r44 53r44
+102V14*"+"{44I9} 12|93s31 165s41
+103V14*"+"{44I9} 12|174s31
+104V14*"-"{44I9} 12|84s29 183s41
+105V14*"-"{duration} 12|52s54 192s26
+111V14*"<"{boolean} 12|201s26
+112V14*"<="{boolean} 12|210s26
+113V14*">"{boolean} 12|219s26
+114V14*">="{boolean} 12|228s26
+116X4*Time_Error 11|78r53
+213I9 Time_Rep<long_long_integer>
+X 8 calendar.ads
+18K9*Calendar=18:30 11|37w6 45r57 46r44 50r39 51r39 52r39 53r39 78r44 84r36
+. 12|47r32 49r17
+X 10 posix.ads
+43K9*POSIX 642e10 11|38w6 39r9 80r35 81r52 85r5 12|45r14 235r35 237r38 244r52
+. 246r14 249r5
+520R9*Timespec 595e14 11|80r41 81r58 12|235r41 244r58
+554V13*To_Duration{duration} 12|237s44
+556V13*To_Timespec{520R9} 12|246s20
+X 11 posix-calendar.ads
+39K15*Calendar 10|43k9 11|84E9 85l11 85e19 12|45b20 249l11 249t19
+43I9*POSIX_Time<2|44I9> 44r26 45r29 46r66 54r26 55r27 56r25 57r29 59r17 68r45
+. 69r22 69r55 70r36 70r55 71r22 71r55 72r22 72r38 73r26 74r26 75r26 76r26
+. 80r58 81r33 84c9 12|62r38 65r28 73r26 82r29 91r51 93r14 100r26 109r27 118r25
+. 127r29 137r17 154r45 163r22 163r55 172r36 172r55 181r22 181r55 190r22 190r38
+. 199r25 208r26 217r25 226r26 235r58 244r33
+44V13*Clock{43I9}<2|58p13> 12|73b13 76l8 76t13
+45V13*To_Time{2|44I9} 45>22 12|82b13 85l8 85t15 102s36 111s24 120s22 129s26
+. 143s17 165s29 174s33 183s29 192s14 192s28 201s14 201s28 210s14 210s29 219s14
+. 219s28 228s14 228s29
+45i22 Date{43I9} 12|82b22 84r23
+46V13*To_POSIX_Time{43I9} 46>28 12|75s14 91b13 94l8 94t21 156s14 165s14 174s14
+. 183s14
+46i28 Date{2|44I9} 12|91b28 93r26
+50I12*Year_Number{2|50I12} 54r45 60r21 65r17 12|100r45 102r14 138r21 151r17
+51I12*Month_Number{2|51I12} 55r46 61r21 66r17 12|109r46 139r21 152r17
+52I12*Day_Number{2|52I12} 56r44 62r21 67r17 12|118r44 140r21 153r17
+53O12*Day_Duration{2|56O12} 57r48 63r21 68r17 12|127r48 141r21 154r17
+54V13*Year{50I12}<2|66p13> 54>19 12|100b13 103l8 103t12
+54i19 Date{43I9} 12|100b19 102r45
+55V13*Month{51I12}<2|67p13> 55>20 12|109b13 112l8 112t13
+55i20 Date{43I9} 12|109b20 111r33
+56V13*Day{52I12}<2|68p13> 56>18 12|118b13 121l8 121t11
+56i18 Date{43I9} 12|118b18 120r31
+57V13*Seconds{53O12}<2|69p13> 57>22 12|127b13 130l8 130t15
+57i22 Date{43I9} 12|127b22 129r35
+58U14*Split<2|71p14> 59>7 60<7 61<7 62<7 63<7 12|136b14 144l8 144t13
+59i7 Date{43I9} 12|137b7 143r26
+60i7 Year{50I12} 12|138b7 143m33
+61i7 Month{51I12} 12|139b7 143m39
+62i7 Day{52I12} 12|140b7 143m46
+63o7 Seconds{53O12} 12|141b7 143m51
+64V13*Time_Of{43I9}<2|82p13> 65>7 66>7 67>7 68>7 12|150b13 157l8 157t15
+65i7 Year{50I12} 12|151b7 156r41
+66i7 Month{51I12} 12|152b7 156r47
+67i7 Day{52I12} 12|153b7 156r54
+68o7 Seconds{53O12} 12|154b7 156r59
+69V14*"+"{43I9}<2|102p13> 69>18 69>34 12|163b14 166l9 166t11
+69i18 L{43I9} 12|163b18 165r38
+69o34 R{duration} 12|163b34 165r43
+70V14*"+"{43I9}<2|103p13> 70>18 70>32 12|172b14 175l9 175t11
+70o18 L{duration} 12|172b18 174r29
+70i32 R{43I9} 12|172b32 174r42
+71V14*"-"{43I9}<2|104p13> 71>18 71>34 12|181b14 184l9 184t11
+71i18 L{43I9} 12|181b18 183r38
+71o34 R{duration} 12|181b34 183r43
+72V14*"-"{duration}<2|105p13> 72>18 72>34 12|190b14 193l9 193t11
+72i18 L{43I9} 12|190b18 192r23
+72i34 R{43I9} 12|190b34 192r37
+73V14*"<"{boolean}<2|111p13> 73>19 73>22 12|199b14 202l9 202t11
+73i19 L{43I9} 12|199b18 201r23
+73i22 R{43I9} 12|199b21 201r37
+74V14*"<="{boolean}<2|112p13> 74>19 74>22 12|208b14 211l9 211t12
+74i19 L{43I9} 12|208b19 210r23
+74i22 R{43I9} 12|208b22 210r38
+75V14*">"{boolean}<2|113p13> 75>19 75>22 12|217b14 220l9 220t11
+75i19 L{43I9} 12|217b18 219r23
+75i22 R{43I9} 12|217b21 219r37
+76V14*">="{boolean}<2|114p13> 76>19 76>22 12|226b14 229l9 229t12
+76i19 L{43I9} 12|226b19 228r23
+76i22 R{43I9} 12|226b22 228r38
+78X4*Time_Error
+80V13*To_POSIX_Time{43I9} 80>28 12|235b13 238l8 238t21
+80r28 Date{10|520R9} 12|235b28 237r57
+81V13*To_Timespec{10|520R9} 81>26 12|244b13 247l8 247t19
+81i26 Date{43I9} 12|244b26 246r57
+X 12 posix-calendar.adb
+47K12 AC=47:32 52r6 53r6 75r29 82r48 84r14 91r35 102r27 111r14 120r14 129r14
+. 143r7 156r29
+51o4 POSIX_Epoch{duration} 84r31 93r33
+61V13 Duration_To_POSIX_Time[25|20]{11|43I9} 237s14
+64V13 POSIX_Time_To_Duration[25|20]{duration} 246s33
+X 25 unchconv.ads
+20v10*Unchecked_Conversion 12|43w6 62r6 65r6
+

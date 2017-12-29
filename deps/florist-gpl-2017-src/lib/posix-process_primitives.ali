@@ -1,0 +1,505 @@
+V "GNAT Lib v2017"
+A -O2
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwe
+A -gnatyg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_CONVERSION
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U posix.process_primitives%b  posix-process_primitives.adb  fac16da2 NE OO PK IU
+W ada.tags%s		a-tags.adb		a-tags.ali
+W interfaces%s		interfac.ads		interfac.ali
+W posix%s		posix.adb		posix.ali
+W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
+W posix.unsafe_process_primitives%s  posix-unsafe_process_primitives.adb  posix-unsafe_process_primitives.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W unchecked_conversion%s
+W unchecked_deallocation%s
+
+U posix.process_primitives%s  posix-process_primitives.ads  69ea0be5 EE NE OO PK IU
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W posix%s		posix.adb		posix.ali
+W posix.c%s		posix-c.adb		posix-c.ali
+W posix.io%s		posix-io.adb		posix-io.ali
+W posix.process_environment%s  posix-process_environment.adb  posix-process_environment.ali
+W posix.process_identification%s  posix-process_identification.adb  posix-process_identification.ali
+W posix.signals%s	posix-signals.adb	posix-signals.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-taside.ads		20170516105954 c6417f71 ada.task_identification%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-implementation-ok_signals.ads  20171229062448 ae9904fa posix.implementation.ok_signals%s
+D posix-io.ads		20170516104058 0235a363 posix.io%s
+D posix-permissions.ads	20170516104058 501242a1 posix.permissions%s
+D posix-process_environment.ads  20170516104058 0b26e8df posix.process_environment%s
+D posix-process_identification.ads  20170516104058 6458fdd5 posix.process_identification%s
+D posix-process_primitives.ads  20170516104058 542921db posix.process_primitives%s
+D posix-process_primitives.adb  20170516104059 530a0be9 posix.process_primitives%b
+D posix-signals.ads	20170516104058 6931d508 posix.signals%s
+D posix-unsafe_process_primitives.ads  20170516104058 f8fcc1b8 posix.unsafe_process_primitives%s
+D system.ads		20170516105953 6326c08a system%s
+D s-atacco.ads		20170516105954 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-memory.ads		20170516105953 597d6634 system.memory%s
+D s-multip.ads		20170516105948 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-secsta.ads		20170516105955 9751b57e system.secondary_stack%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stausa.ads		20170516105954 017a0a05 system.stack_usage%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stalib.adb		20170516105948 f2fe2716 system.standard_library%b
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-stposu.ads		20170516105949 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20170516105949 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20170516105952 2b3f8252 system.task_info%s
+D s-taspri.ads		20170516105950 f40ac08d system.task_primitives%s
+D s-taskin.ads		20170516105956 05d6152c system.tasking%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+D unchdeal.ads		20170516105955 214516a4 unchecked_deallocation%s
+X 9 i-c.ads
+35I9*int<integer>
+47M9*unsigned_char
+X 10 posix.ads
+43K9*POSIX 642e10 18|36w6 37r6 38r6 39r6 40r6 41r6 43r9 58r14 62r24 63r25
+. 67r14 71r14 72r14 73r14 73r36 74r17 74r45 78r14 79r19 84r19 85r18 87r18
+. 88r19 91r19 92r18 94r18 95r18 96r19 99r19 100r18 102r18 103r19 106r19 107r18
+. 109r18 110r18 111r19 133r14 142r14 145r14 151r15 154r24 155r25 159r15 162r24
+. 163r25 169r24 170r25 176r16 176r33 177r29 190r15 197r28 198r28 199r31 201r27
+. 209r20 211r23 211r47 215r5 19|39r6 40r6 44r14 46r8 47r8 48r8 49r8 51r34
+. 52r7 53r7 54r7 66r7 121r50 248r23 249r13 321r14 333r24 334r25 346r14 374r14
+. 375r14 376r14 376r36 377r17 377r45 410r14 411r19 453r26 454r14 457r19 458r18
+. 500r19 501r18 503r18 540r19 541r18 573r19 574r18 576r18 610r21 673r14 713r14
+. 720r14 734r14 741r14 781r15 784r24 784r48 819r15 822r24 823r25 838r24 839r25
+. 845r5
+143E9*Signal_Masking 143e65 18|62r30 154r30 162r30 169r30 211r29 19|333r30
+. 784r30 822r30 838r30
+143n28*No_Signals{143E9} 19|286r30
+143n40*RTS_Signals{143E9} 18|63r31 155r31 163r31 170r31 211r53 19|334r31
+. 784r54 823r31 839r31
+145E9*POSIX_Character<character>
+150e4*NUL{145E9} 19|93r24 96r36 98r39 379r55 466r54 510r54 549r54 580r54
+183A9*POSIX_String(145E9)<integer> 19|83r19 84r14 84r35 89r19 90r14 90r35
+. 379r32 466r27 510r27 549r27 580r27 609r29 625r30
+192A12*Filename{183A9}<integer> 18|100r24 107r24 19|541r24 574r24
+193A12*Pathname{183A9}<integer> 18|72r20 85r24 92r24 197r34 19|375r20 458r24
+. 501r24
+199P9*POSIX_String_List 18|87r24 95r24 102r24 110r24 19|63r32 460r18 468r21
+. 504r18 543r18 577r18
+200p4*Empty_String_List{199P9} 18|88r25 96r25 103r25 111r25 19|460r39 504r39
+. 543r39 577r39
+201U14*Make_Empty 19|493s10
+202U14*Append 19|475s10
+209V13*Length{natural} 19|474s34
+214R9*Option_Set 610e17 19|222r23
+215V13*Empty_Set{214R9} 18|74s54 19|377s54
+255I9*Error_Code<integer>
+314N4*Invalid_Argument 19|273r29 676r29 697r29 718r29 739r29 752r29
+341N4*ENOENT 19|631r37
+363N4*ENOSYS 19|765r26
+601M9 Bits 19|51r57 60r49 787r17
+609m10*Option{601M9} 19|222r53
+X 11 posix-c.ads
+42K15*C 2642e12 18|37w12 176r22 176r39 177r35 19|46r14
+60I9*int<integer> 18|177r37 19|60r55 111r29 113r29 119r53 122r13 125r13 127r35
+. 130r36 132r36 141r41 146r41 149r29 149r41 152r44 152r56 155r37 155r49 159r18
+. 219r33 231r23 232r34 240r26 240r46 441r35 446r35 450r35 463r16 484r39 507r16
+. 522r39 546r16 557r39 592r39 614r22 649r33 655r17 685r35 685r47 688r37 688r49
+. 706r37 706r49 709r34 709r46 727r36 727r48 730r34 730r46 775r25 776r17 810r14
+98E12*char{10|145E9}
+99P9*char_ptr(98E12) 19|152r26 440r14 444r14 449r14
+106P9*char_ptr_ptr(99P9) 19|441r14 445r14 446r14 450r14
+112A9*char_ptr_array(99P9)<integer>
+229N4*O_RDONLY 19|52r30
+230N4*O_RDWR 19|54r30
+234N4*O_WRONLY 19|53r30
+298N4*SIG_SETMASK 19|253r30
+345N4*WNOHANG 19|793r32
+346N4*WUNTRACED 19|790r32
+425I9*pid_t<integer> 18|176r24 176r41 19|69r29 71r47 73r41 462r13 506r13
+. 545r13 579r13 774r13 776r29
+427M9*gid_t 19|144r27 146r27
+429M9*uid_t 19|139r27 141r27
+537A9*sigset_t(60I9)<integer> 19|161r36
+541P9*sigset_t_ptr(537A9) 19|119r32 121r30 126r13 127r14
+1067a4*close_LINKNAME{string} 19|150r29
+1079a4*dup2_LINKNAME{string} 19|156r28
+1081a4*execv_LINKNAME{string} 19|442r29
+1083a4*execve_LINKNAME{string} 19|447r30
+1085a4*execvp_LINKNAME{string} 19|451r30
+1111a4*getgid_LINKNAME{string} 19|145r30
+1133a4*getuid_LINKNAME{string} 19|140r30
+1185a4*open_LINKNAME{string} 19|153r28
+1235a4*pthread_sigmask_LINKNAME{string} 19|128r39
+1288a4*setgid_LINKNAME{string} 19|147r30
+1294a4*setuid_LINKNAME{string} 19|142r30
+1302a4*sigaddset_LINKNAME{string} 19|123r33
+1306a4*sigemptyset_LINKNAME{string} 19|120r35
+1370a4*waitpid_LINKNAME{string} 19|777r31
+X 12 posix-implementation.ads
+42K15*Implementation 389e25 19|39w12 47r14
+72U14*Defer_Abortion 19|795s7
+73U14*Undefer_Abortion 19|809s7
+87A12*Signal_Mask{27|53A9} 19|469r26
+90U14*Raise_POSIX_Error 19|273s10 676s10 697s10 718s10 739s10 752s10 765s7
+103U14*Check 19|484s32 522s32 557s32 592s32 810s7
+127V13*Not_Implemented_Neg_One{11|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{11|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{11|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{11|60I9} 141i<c,notsup_direct>22
+174a7*Char{11|112A9} 19|489m17 528m17 528m38 561m60 603m23 603m44 630m26
+. 630m47
+177P9*String_List_Ptr(172R9) 19|63r51 66r46 467r13 511r13 512r13 550r13 581r13
+. 582r13
+184p4*Null_String_List_Ptr{177P9} 19|516r17 519r17 554r17 586r17 589r17
+225U14*Mask_Signals 19|482s7
+229U14*Restore_Signals 19|494s10
+259V13*Fetch_Errno{10|255I9} 19|631s22
+X 14 posix-io.ads
+45K15*IO 268e13 18|38w12 67r20 71r20 73r20 73r42 74r23 74r51 78r20 79r25
+. 190r21 198r34 199r37 201r33 19|51r40 52r13 53r13 54r13 346r20 374r20 376r20
+. 376r42 377r23 377r51 410r20 411r25
+47I9*File_Descriptor<integer> 18|67r23 71r23 78r23 79r28 190r24 201r36 19|346r23
+. 374r23 410r23 411r28
+59E9*File_Mode 59e57 18|73r23 198r37 19|51r43 376r23
+59n23*Read_Only{59E9} 18|73r45 19|52r16 376r45
+59n34*Write_Only{59E9} 19|53r16
+59n46*Read_Write{59E9} 19|54r16
+60R9*Open_Option_Set<10|214R9> 18|74r26
+X 16 posix-process_environment.ads
+38K15*Process_Environment 128e30 18|39w12 94r24 109r24 19|49r14 66r13 503r24
+. 576r24 610r27
+57P9*Environment 18|94r44 109r44 19|66r33 503r44 576r44
+70V13*Environment_Value_Of{10|183A9} 19|610s47
+X 17 posix-process_identification.ads
+38K15*Process_Identification 101e33 18|40w12 84r25 91r25 99r25 106r25 133r20
+. 151r21 159r21 19|48r14 453r32 457r25 500r25 540r25 573r25 673r20 781r21
+. 819r21
+42I9*Process_ID<11|425I9> 18|84r48 91r48 99r48 106r48 133r43 151r44 19|69r36
+. 73r29 453r55 457r48 500r48 540r48 573r48 673r43 781r44
+54I9*Process_Group_ID<11|425I9> 18|159r44 19|71r29 819r44
+X 18 posix-process_primitives.ads
+43K15*Process_Primitives 10|43k9 18|174E9 215l11 215e29 19|44b20 845l11 845t29
+47R9*Process_Template 49r47 51r48 54r25 57r25 61r25 66r25 70r25 77r25 86r18
+. 93r18 101r18 108r18 205c9 213e17 19|109r43 158r43 268r35 270r35 282r24
+. 295r25 309r25 320r25 332r25 345r25 373r25 409r25 459r18 502r18 542r18 575r18
+49U14*Open_Template 49=29 19|281b14 288l8 288t21
+49r29 Template{47R9} 19|282b6 284m7 285m7 286m7 287m7
+51U14*Close_Template 51=30 19|294b14 302l8 302t22
+51r30 Template{47R9} 19|295b7 297r17 298r13 299m23 299r23 301m7
+53U14*Set_Keep_Effective_IDs 54=7 19|308b14 313l8 313t30
+54r7 Template{47R9} 19|309b7 311r17 312m7
+56U14*Set_Signal_Mask 57=7 58>7 19|319b14 325l8 325t23
+57r7 Template{47R9} 19|320b7 323r17 324m7
+58r7 Mask{20|124R9} 19|321b7 324r27
+60U14*Set_Creation_Signal_Masking 61=7 62>7 19|331b14 338l8 338t35
+61r7 Template{47R9} 19|332b7 336r17 337m7
+62e7 Masked_Signals{10|143E9} 19|333b7 337r30
+65U14*Set_File_Action_To_Close 66=7 67>7 19|344b14 366l8 366t32
+66r7 Template{47R9} 19|345b7 348r27 350r17 353m10 354r17
+67i7 File{14|47I9} 19|346b7 363r17
+69U14*Set_File_Action_To_Open 70=7 71>7 72>7 73>7 74>7 19|372b14 402l8 402t31
+70r7 Template{47R9} 19|373b7 380r27 382r17 385m10 386r17
+71i7 File{14|47I9} 19|374b7 396r17
+72a7 Name{10|193A12} 19|375b7 379r48
+73e7 Mode{14|59E9} 19|376b7 400r24
+74r7 Options{14|60R9} 19|377b7 401r27
+76U14*Set_File_Action_To_Duplicate 77=7 78>7 79>7 19|408b14 433l8 433t36
+77r7 Template{47R9} 19|409b7 413r27 415r17 418m10 419r17
+78i7 File{14|47I9} 19|410b7 429r17
+79i7 From_File{14|47I9} 19|411b7 432r23
+83U14*Start_Process 84<7 85>7 86>7 87>7 19|456b14 497l8 497t21
+84i7 Child{17|42I9} 19|457b7 492m10
+85a7 Pathname{10|193A12} 19|458b7 466r43
+86r7 Template{47R9} 19|459b7 479r17 483r10 486r28 495r13
+87p7 Arg_List{10|199P9} 19|460b7 467r52 474r10 474r42
+90U14*Start_Process 91<7 92>7 93>7 94>7 95>7 19|499b14 533l8 533t21
+91i7 Child{17|42I9} 19|500b7 531m10
+92a7 Pathname{10|193A12} 19|501b7 510r43
+93r7 Template{47R9} 19|502b7 521r17 525r28
+94p7 Env_List{16|57P9} 19|503b7 512r52
+95p7 Arg_List{10|199P9} 19|504b7 511r52
+98U14*Start_Process_Search 99<7 100>7 101>7 102>7 19|539b14 566l8 566t28
+99i7 Child{17|42I9} 19|540b7 564m10
+100a7 Filename{10|192A12} 19|541b7 549r43
+101r7 Template{47R9} 19|542b7 556r17 559r28
+102p7 Arg_List{10|199P9} 19|543b7 550r52
+105U14*Start_Process_Search 106<7 107>7 108>7 109>7 110>7 19|572b14 643l8
+. 643t28
+106i7 Child{17|42I9} 19|573b7 641m10
+107a7 Filename{10|192A12} 19|574b7 580r43 599r19 600r16 626r63
+108r7 Template{47R9} 19|575b7 591r17 595r28
+109p7 Env_List{16|57P9} 19|576b7 582r52
+110p7 Arg_List{10|199P9} 19|577b7 581r52
+115I9*Exit_Status<short_integer> 117r40 118r40 119r40 121r37 139r14 19|653r16
+. 692r14 699r14
+117i4*Normal_Exit{115I9} 121r52 19|653r31
+118i4*Failed_Creation_Exit{115I9} 19|135r24 225r30 237r30 242r30 261r21 490r24
+. 529r24 562r24 632r36 639r24
+119i4*Unhandled_Exception_Exit{115I9}
+121U14*Exit_Process 121>28 19|135s10 225s16 237s16 242s16 261s7 490s10 529s10
+. 562s10 632s22 639s10 652b14 656l8 656t20
+121i28 Status{115I9} 19|653b7 655r22
+125R9*Termination_Status 129r40 132r37 135r44 138r38 141r45 144r42 150r20
+. 158r20 166r20 174c9 178e17 19|663r16 672r37 691r38 712r45 733r42 748r44
+. 780r20 818r20 835r20
+126E9*Termination_Cause 127e55 136r14 19|749r14
+127n7*Exited{126E9} 19|755r17
+127n15*Terminated_By_Signal{126E9} 19|758r17
+127n37*Stopped_By_Signal{126E9} 19|761r17 766r14
+129V13*Status_Available{boolean} 129>31 19|662b13 666l8 666t24 675s14 694s14
+. 715s14 736s14 751s14
+129r31 Status{125R9} 19|663b7 665r14 665r34
+132V13*Process_ID_Of{17|42I9} 132>28 19|672b13 679l8 679t21
+132r28 Status{125R9} 19|672b28 675r32 678r29
+135V13*Termination_Cause_Of{126E9} 135>35 19|748b13 767l8 767t28
+135r35 Status{125R9} 19|748b35 751r32 754r21 757r23 760r22
+138V13*Exit_Status_Of{115I9} 138>29 19|691b13 700l8 700t22
+138r29 Status{125R9} 19|691b29 694r32 695r28 699r40
+141V13*Termination_Signal_Of{20|56I9} 141>36 19|712b13 721l8 721t29
+141r36 Status{125R9} 19|712b36 715r32 716r30 720r46
+144V13*Stopping_Signal_Of{20|56I9} 144>33 19|733b13 742l8 742t26
+144r33 Status{125R9} 19|733b33 736r32 737r29 741r46
+149U14*Wait_For_Child_Process 150<7 151>7 152>7 153>7 154>7 19|779b14 811l8
+. 811t30 825s7 841s7
+150r7 Status{125R9} 19|780b7 807m7 808m9 808r9 810r19
+151i7 Child{17|42I9} 19|781b7 807r40
+152b7 Block{boolean} 19|782b7 792r14
+153b7 Trace_Stopped{boolean} 19|783b7 789r10
+154e7 Masked_Signals{10|143E9} 19|784b7 786r28
+157U14*Wait_For_Child_Process 158<7 159>7 160>7 161>7 162>7 19|817b14 828l8
+. 828t30
+158r7 Status{125R9} 19|818b7 826m10
+159i7 Group{17|54I9} 19|819b7 826r44
+160b7 Block{boolean} 19|820b7 827r10
+161b7 Trace_Stopped{boolean} 19|821b7 827r17
+162e7 Masked_Signals{10|143E9} 19|822b7 827r32
+165U14*Wait_For_Child_Process 166<7 167>7 168>7 169>7 19|834b14 843l8 843t30
+166r7 Status{125R9} 19|835b7 842m10
+167b7 Block{boolean} 19|836b7 842r38
+168b7 Trace_Stopped{boolean} 19|837b7 842r45
+169e7 Masked_Signals{10|143E9} 19|838b7 842r60
+176i10*pid{11|425I9} 19|665r21 665r41 678r36 807m14 810r26
+177i10*stat_val{11|60I9} 19|695r35 699r47 716r37 720r53 737r36 741r53 754r28
+. 757r30 760r29 808m16
+180E9 FD_Action_Type 180e51 183r19 187r19 192r19
+180n28 Open{180E9} 196r18 19|220r15 385r49 392r42 398r21
+180n34 Close{180E9} 194r18 19|218r15 353r49 359r42 365r21
+180n41 Duplicate{180E9} 200r18 19|239r15 418r49 425r42 431r21
+182R9 FD_Set_Element 183d7 184d7 185r30 186c9 203e17 19|76r31 353r33 359r26
+. 385r33 392r26 418r33 425r26
+183e7 FD_Action{180E9} 187r7
+184i7 File_Name_Size{positive} 188r7
+185P9 FD_Set_Ptr(182R9) 191r17 212r19 19|76r47 101r44 102r44 103r14 160r13
+. 348r13 380r13 413r13
+187e7*FD_Action{180E9} 193r15
+188i7*File_Name_Size{positive} 197r49
+190i10*FD{14|47I9} 19|219r42 231r32 232r43 240r55 363m11 396m11 429m11
+191p10*Next{185P9} 19|105r23 245r21 356r20 357r24 359m14 360r21 364m11 388r20
+. 389r24 392m14 393r21 397m11 421r20 422r24 425m14 426r21 430m11
+192e10*Action{180E9} 19|217r19 365m11 398m11 431m11
+197a16*File_Name{10|183A9} 19|221m30 221r45 399m11
+198e16*File_Mode{14|59E9} 19|223r37 400m11
+199r16*File_Options{14|60R9} 19|222r39 401m11
+201i16*Dup_From{14|47I9} 19|240r35 432m11
+207b10*Is_Closed{boolean} 19|272r19 284m16 301m16
+208b10*Keep_Effective_IDs{boolean} 19|164r23 285m16 312m16
+209r10*Sig_Set{20|124R9} 19|249r47 324m16
+211e10*Masked_Sig{10|143E9} 19|286m16 337m16 483r19 495r22
+212p10*FD_Set{185P9} 19|160r36 287m16 298r22 299m32 348r36 353m19 354r26
+. 380r36 385m19 386r26 413r36 418m19 419r26
+X 19 posix-process_primitives.adb
+51a4 C_File_Mode(10|601M9) 223r20
+60V13 To_int[50|20]{11|60I9} 222s15 808s43
+62V13 To_String_List_Ptr[50|20]{12|177P9} 467s32 476s17 511s32 550s32 581s32
+64V13 To_String_List_Ptr[50|20]{12|177P9} 512s32 582s32
+68V13 To_Process_ID[50|20]{17|42I9} 492s19 531s19 564s19 641s19 678s14 826s18
+. 842s18
+70V13 To_pid_t[50|20]{11|425I9} 826s34
+72V13 To_pid_t[50|20]{11|425I9} 484s14 522s14 557s14 592s14 807s30
+75U14 Free[51|20] 106s7
+82V13 Make_Path_Name{10|183A9} 83>7 84>7 85r19 88b13 99l8 99t22 626s24
+83a7 Directory{10|183A9} 89b7 92r10 95r10 95r21 96r17 98r14
+84a7 File{10|183A9} 90b7 93r17 96r29 98r32
+101U14 Delete_Head 101=27 102b14 107l8 107t19 299s10
+101p27 Pointer{18|185P9} 102b27 103r28 105m7
+103p7 Head{18|185P9} 105r18 106m13 106r13
+109U14 Execute_Template 109>32 158b14 266l8 266t24 486s10 525s10 559s10 595s10
+109r32 Template{18|47R9} 158b32 160r27 164r14 249r38
+111U14 Void 111>20 112r19 113b14 117l8 117t12 247s7 250s13 253s7
+111i20 Ignore{11|60I9} 113b20 114r28
+119V13 sigemptyset{11|60I9} 119>26 120b<c,sigemptyset>22 247s13
+119p26 set{11|541P9}
+121V13 sigaddset{11|60I9} 121>24 121>44 123b<c,sigaddset>22 250s19
+121p24 set{11|541P9}
+121i44 sig{20|56I9}
+124V13 pthread_sigmask{11|60I9} 125>7 126>7 127>7 128b<c,pthread_sigmask>22
+. 253s13
+125i7 how{11|60I9}
+126p7 set{11|541P9}
+127p7 oset{11|541P9}
+130U14 Check_Fatal 130>27 132b14 137l8 137t19 169s10 170s10 219s13 601s16
+130i27 Result{11|60I9} 132b27 134r10
+139V13 getuid{11|429M9} 140b<c,getuid>22 169s31
+141V13 setuid{11|60I9} 141>21 142b<c,setuid>22 169s23
+141m21 uid{11|429M9}
+144V13 getgid{11|427M9} 145b<c,getgid>22 170s31
+146V13 setgid{11|60I9} 146>21 147b<c,setgid>22 170s23
+146m21 gid{11|427M9}
+149V13 close{11|60I9} 149>20 150b<c,close>22 219s26
+149i20 fildes{11|60I9}
+152V13 open{11|60I9} 152>19 152>36 153b<c,__gnat_florist_open>22 221s20
+152p19 path{11|99P9}
+152i36 oflag{11|60I9}
+155V13 dup2{11|60I9} 155>19 155>27 156b<c,dup2>22 232s23 240s20
+155i19 fildes{11|60I9}
+155i27 fildes2{11|60I9}
+159i7 FD1{11|60I9} 221m13 224r16 231r16 232r29 234r23
+159i12 FD2{11|60I9} 232m16 234m16 236r16 240m13 241r16
+160p7 Cur{18|185P9} 216r13 217r15 219r38 221r26 221r41 222r35 223r33 231r28
+. 232r39 240r31 240r51 245m10 245r17
+161a7 New_Mask{11|537A9} 247r26 250r30 253r43
+161a17 Old_Mask{11|537A9} 254r9
+248i11 Sig<27|55I9> 249r56 250r57
+268U14 Validate 268>24 270b14 275l8 275t16 297s7 311s7 323s7 336s7 350s7
+. 382s7 415s7 479s7 521s7 556s7 591s7
+268r24 Template{18|47R9} 270b24 272r10
+348p7 Tmp{18|185P9} 352r10 354m10 356r16 357m13 357r20 359r10 360m10 360r17
+. 363r7 364r7 365r7
+379a7 Name_With_NUL=379:53{10|183A9} 385r55 392r48 399r24
+380p7 Tmp{18|185P9} 384r10 386m10 388r16 389m13 389r20 392r10 393m10 393r17
+. 396r7 397r7 398r7 399r7 400r7 401r7
+413p7 Tmp{18|185P9} 417r10 419m10 421r16 422m13 422r20 425r10 426m10 426r17
+. 429r7 430r7 431r7 432r7
+439V13 execv{11|60I9} 440>7 441>7 442b<c,execv>22 487s20
+440p7 path{11|99P9}
+441p7 argv{11|106P9}
+443V13 execve{11|60I9} 444>7 445>7 446>7 447b<c,execve>22 526s20 601s29 628s29
+444p7 path{11|99P9}
+445p7 argv{11|106P9}
+446p7 envp{11|106P9}
+448V13 execvp{11|60I9} 449>7 450>7 451b<c,execvp>22 560s20
+449p7 file{11|99P9}
+450p7 argv{11|106P9}
+453V13 UFork=454:46{17|42I9} 484s24 522s24 557s24 592s24
+462i7 pid{11|425I9} 484m7 484r44 485r10 492r34
+463i7 Result{11|60I9} 464r28 487m10
+466a7 Pathname_With_NUL=466:52{10|183A9} 475r31 487r27 488r13
+467p7 Arg{12|177P9} 476m10 489r13
+468p7 Default_Arg{10|199P9} 475m18 475r18 476r37 493m22 493r22
+469a7 Old_Mask{12|87A12} 483m31 483r31 495m34 495r34
+506i7 pid{11|425I9} 522m7 522r44 524r10 531r34
+507i7 Result{11|60I9} 508r28 526m10
+510a7 Pathname_With_NUL=510:52{10|183A9} 526r28 527r13
+511p7 Arg{12|177P9} 515r10 516m10 528r13
+512p7 Env{12|177P9} 518r10 519m10 528r34
+545i7 pid{11|425I9} 557m7 557r44 558r10 564r34
+546i7 Result{11|60I9} 547r28 560m10
+549a7 Filename_With_NUL=549:52{10|183A9} 560r28 561r13
+550p7 Arg{12|177P9} 553r10 554m10 561r56
+579i7 pid{11|425I9} 592m7 592r44 594r10 641r34
+580a7 Filename_With_NUL=580:52{10|183A9} 602r19 602r38
+581p7 Arg{12|177P9} 585r10 586m10 603r19 630r22
+582p7 Env{12|177P9} 588r10 589m10 603r40 630r43
+599i14 I{integer} 600r26
+609a13 Path{10|183A9} 618r18 621r27 621r46 626r40 635r30
+612i13 Start{positive} 620m16 626r46
+613i13 P{positive} 618m13 620r25 621r22 621r52 622m19 622r24 626r55 635r26
+. 636m16 636r21
+614i13 Result{11|60I9} 615r34 628m19
+625a19 Pathname{10|183A9} 628r37 629r22
+649U14 sys_exit 649>24 650b<c,_exit>22 655s7
+649i24 status{11|60I9}
+685V13 wifexited{11|60I9} 685>24 686b<c,wifexited>22 695s17 754s10
+685i24 stat_val{11|60I9}
+688V13 wexitstatus{11|60I9} 688>26 689b<c,wexitstatus>22 699s27
+688i26 stat_val{11|60I9}
+706V13 wifsignaled{11|60I9} 706>26 707b<c,wifsignaled>22 716s17 757s10
+706i26 stat_val{11|60I9}
+709V13 wtermsig{11|60I9} 709>23 710b<c,wtermsig>22 720s36
+709i23 stat_val{11|60I9}
+727V13 wifstopped{11|60I9} 727>25 728b<c,wifstopped>22 737s17 760s10
+727i25 stat_val{11|60I9}
+730V13 wstopsig{11|60I9} 730>23 731b<c,wstopsig>22 741s36
+730i23 stat_val{11|60I9}
+773V13 waitpid{11|425I9} 774>7 775^7 776>7 777b<c,waitpid>22 807s21
+774i7 pid{11|425I9}
+775p7 stat_loc(11|60I9)
+776i7 options{11|60I9}
+787m7 Options{10|601M9} 790m10 790r21 793m10 793r21 808r51
+X 20 posix-signals.ads
+52K15*Signals 18|41w12 58r20 142r20 145r20 209r26 19|121r56 248r29 249r19
+. 321r20 713r20 720r20 734r20 741r20 20|317e18
+56I9*Signal<27|55I9> 18|142r28 145r28 19|121r64 248r37 713r28 720r28 734r28
+. 741r28
+124R9*Signal_Set<3|43R9> 18|58r28 209r34 19|321r28 20|285e14
+134V13*Is_Member{boolean} 19|249s27
+X 21 posix-unsafe_process_primitives.ads
+40K15*Unsafe_Process_Primitives 19|40w12 454r20 21|58e36
+42V13*Fork{17|42I9} 19|454r46
+X 22 system.ads
+67M9*Address
+X 27 s-intman.ads
+53A9*Interrupt_Mask<32|156A9>
+55I9*Interrupt_ID<9|35I9>
+X 29 s-memory.ads
+53V13*Alloc{22|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{22|67M9} 105i<c,__gnat_realloc>22
+X 32 s-osinte.ads
+60M12*unsigned_char{9|47M9}
+156A9*sigset_t(60M12)
+X 38 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 40 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 50 unchconv.ads
+20v10*Unchecked_Conversion 19|41w6 60r27 63r10 65r10 69r7 71r7 73r7
+X 51 unchdeal.ads
+20u11*Unchecked_Deallocation 19|42w6 76r7
+

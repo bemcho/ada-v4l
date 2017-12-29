@@ -1,0 +1,88 @@
+V "GNAT Lib v2017"
+A -O2
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwe
+A -gnatyg
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U posix.memory_locking%b  posix-memory_locking.adb  e58e8a60 NE OO PK IU
+W posix%s		posix.adb		posix.ali
+W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
+
+U posix.memory_locking%s  posix-memory_locking.ads  8762eb2e EE NE OO PK IU
+W ada.tags%s		a-tags.adb		a-tags.ali
+W posix%s		posix.adb		posix.ali
+W posix.c%s		posix-c.adb		posix-c.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-memory_locking.ads  20170516104058 bedba271 posix.memory_locking%s
+D posix-memory_locking.adb  20170516104058 b5212685 posix.memory_locking%b
+D system.ads		20170516105953 6326c08a system%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 9 posix.ads
+43K9*POSIX 642e10 12|37w6 38r6 39r9 40r39 47r52 49r52 50r5 13|39r6 41r14
+. 43r8 44r8 68r5
+214R9*Option_Set 610e17 12|40r45 47r30 49r30 13|54r29
+601M9 Bits
+609m10*Option{601M9} 12|47m42 49m42 13|54r50
+X 10 posix-c.ads
+42K15*C 2642e12 12|38w12 47r58 49r58 13|43r14
+60I9*int<integer> 13|51r33 51r45 54r24 62r34
+212N4*MCL_CURRENT 12|47r60
+213N4*MCL_FUTURE 12|49r60
+1155a4*mlockall_LINKNAME{string} 13|52r35
+1181a4*munlockall_LINKNAME{string} 13|63r37
+X 11 posix-implementation.ads
+42K15*Implementation 389e25 13|39w12 44r14
+103U14*Check 13|54s7 65s7
+127V13*Not_Implemented_Neg_One{10|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{10|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{10|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{10|60I9} 141i<c,notsup_direct>22
+X 12 posix-memory_locking.ads
+39K15*Memory_Locking 9|43k9 12|46E4 50l11 50e25 13|41b20 68l11 68t25
+40R9*Memory_Locking_Options<9|214R9> 41r29 42r29 43r34
+41r4*Current_Pages{40R9} 46c4
+42r4*Future_Pages{40R9} 48c4
+43U14*Lock_All 43>24 13|50b14 55l8 55t16
+43r24 Options{40R9} 13|50b24 54r41
+44U14*Unlock_All 13|61b14 66l8 66t18
+X 13 posix-memory_locking.adb
+51V16*mlockall{10|60I9} 51>26 52b<c,mlockall>25 54s14
+51i26 flag{10|60I9}
+62V16*munlockall{10|60I9} 63b<c,munlockall>25 65s14
+

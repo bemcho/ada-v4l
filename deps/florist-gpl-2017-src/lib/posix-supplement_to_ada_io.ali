@@ -1,0 +1,188 @@
+V "GNAT Lib v2017"
+A -O2
+A -gnatA
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U posix.supplement_to_ada_io%b  posix-supplement_to_ada_io.adb  4a60b022 NE OO PK IU
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c_streams%s  i-cstrea.adb		i-cstrea.ali
+W posix%s		posix.adb		posix.ali
+W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
+W system%s		system.ads		system.ali
+W system.file_control_block%s  s-ficobl.ads	s-ficobl.ali
+W system.file_io%s	s-fileio.adb		s-fileio.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W unchecked_conversion%s
+
+U posix.supplement_to_ada_io%s  posix-supplement_to_ada_io.ads  001521e6 BN EE NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W posix%s		posix.adb		posix.ali
+W posix.io%s		posix-io.adb		posix-io.ali
+W posix.permissions%s	posix-permissions.adb	posix-permissions.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-ioexce.ads		20170516105949 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-textio.ads		20170516105955 386df5d4 ada.text_io%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D i-cstrea.ads		20170516105950 e53d8b8e interfaces.c_streams%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-io.ads		20170516104058 0235a363 posix.io%s
+D posix-permissions.ads	20170516104058 501242a1 posix.permissions%s
+D posix-process_identification.ads  20170516104058 6458fdd5 posix.process_identification%s
+D posix-supplement_to_ada_io.ads  20170516104058 427578f3 posix.supplement_to_ada_io%s
+D posix-supplement_to_ada_io.adb  20170516104058 8b3fb938 posix.supplement_to_ada_io%b
+D system.ads		20170516105953 6326c08a system%s
+D s-crtl.ads		20170516105948 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-ficobl.ads		20170516105956 078245e4 system.file_control_block%s
+D s-fileio.ads		20170516105950 45ce2f0f system.file_io%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-secsta.ads		20170516105955 9751b57e system.secondary_stack%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20170516105954 1b7d22d2 system.wch_con%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 1 ada.ads
+16K9*Ada 20e8 18|37r6 38r6 83r36 100r34 19|105r36 107r7
+X 4 a-ioexce.ads
+18K13*IO_Exceptions 30e22 18|37w10 100r38
+24X4*Use_Error 18|100r52
+X 7 a-textio.ads
+49K13*Text_IO 471e16 18|38w10 83r40 19|105r40 107r11
+52P9*File_Type 18|83r48 19|105r48
+142U14*Flush 19|107s19
+X 9 interfac.ads
+38K9*Interfaces 184e15 19|55r6 62r8
+X 11 i-cstrea.ads
+37K20*C_Streams 315e25 19|55w17 62r19
+41M12*FILEs{21|50M12}
+42I12*int{21|53I12} 19|115r13 129r13
+99V13*fflush=99:68{21|53I12} 19|121s14 135s14
+X 12 posix.ads
+43K9*POSIX 642e10 18|39r6 40r6 41r9 49r23 56r29 57r30 64r29 65r30 66r29 67r30
+. 102r5 19|54r6 60r14 63r8 138r5
+132E12*Text_IO_Blocking_Behavior{131E9} 18|56r35 66r35
+134e4*IO_Blocking_Behavior{131E9} 18|57r36 67r36
+358N4*Operation_Not_Supported 19|70r26 78r26 85r26 93r26 102r26
+X 13 posix-c.ads
+60I9*int<integer>
+X 14 posix-implementation.ads
+42K15*Implementation 389e25 19|54w12 63r14
+90U14*Raise_POSIX_Error 19|70s7 78s7 85s7 93s7 102s7
+127V13*Not_Implemented_Neg_One{13|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{13|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{13|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{13|60I9} 141i<c,notsup_direct>22
+X 15 posix-io.ads
+45K15*IO 268e13 18|39w12 49r29
+47I9*File_Descriptor<integer> 18|49r32
+X 16 posix-permissions.ads
+38K15*Permissions 81e22 18|40w12 64r35 65r36
+46A9*Permission_Set(boolean)<40E9> 18|64r47
+60a4*Access_Permission_Set{46A9} 18|65r48
+X 18 posix-supplement_to_ada_io.ads
+41K15*Supplement_to_Ada_IO 12|43k9 18|102l11 102e31 19|60b20 138l11 138t31
+43E9*File_Structure_Values 43e49 69r29
+43n35*Regular{43E9} 69r54
+43n44*FIFO{43E9}
+44E9*Terminal_Input_Values 44e53 58r29 68r29
+44n35*Lines{44E9} 58r54 68r54
+44n42*Characters{44E9}
+45R9*Possible_File_Descriptor 45d35 52e16 60r29
+45b35*Valid{boolean} 47r12
+49i10*Descriptor{15|47I9}
+53R9*Form_Values_for_Open 61e17 73r32 76r14 19|67r32 74r46 76r11
+55b10*Append{boolean}
+56e10*Blocking{12|132E12}
+58e10*Terminal_Input{44E9}
+59b10*Page_Terminators{boolean}
+60r10*File_Descriptor{45R9}
+62R9*Form_Values_for_Create 71e17 77r32 80r14 19|82r32 89r46 91r11
+64a10*Permission_Mask{16|46A9}
+66e10*Blocking{12|132E12}
+68e10*Terminal_Input{44E9}
+69e10*File_Structure{43E9}
+70b10*Page_Terminators{boolean}
+73V13*Form_String{string} 73>26 19|67b13 72l8 72t19
+73r26 Val{53R9} 19|67b26 68r28
+75V13*Form_Value{53R9} 75>25 19|74b13 80l8 80t18
+75a25 Str{string} 19|74b25 75r28
+77V13*Form_String{string} 77>26 19|82b13 87l8 87t19
+77r26 Val{62R9} 19|82b26 83r28
+79V13*Form_Value{62R9} 79>25 19|89b13 95l8 95t18
+79a25 Str{string} 19|89b25 90r28
+82U14*Flush_All 19|100b14 103l8 103t17
+83U14*Flush_Text_IO 83>29 19|105b14 108l8 108t21
+83p29 File{7|52P9} 19|105b29 107r26
+86+12 File_Type 87r42 19|110r42 112r31
+87u14*Flush_Sequential_IO 87>35 19|110b14 122l8 122t27
+87*35 File{86+12} 19|110b35 119r20
+90+12 File_Type 91r38 19|124r38 126r31
+91u14*Flush_Direct_IO 91>31 19|124b14 136l8 136t23
+91*31 File{90+12} 19|124b31 133r20
+100X4*Use_Error
+X 19 posix-supplement_to_ada_io.adb
+65P12 System_File_Type{23|82P9} 112r42 114r13 126r42 128r13
+76r7 A{18|53R9} 79r14
+91r7 A{18|62R9} 94r14
+111V16 To_SFT[42|20]{23|82P9} 119s12
+114p7 F{65P12} 119m7 120r39 121r22
+115i7 Ret{11|42I12} 116r28 121m7
+125V16 To_SFT[42|20]{23|82P9} 133s12
+128p7 F{65P12} 133m7 134r39 135r22
+129i7 Ret{11|42I12} 130r28 135m7
+X 20 system.ads
+37K9*System 19|56r6 57r6 65r32 120r7 134r7 20|156e11
+67M9*Address
+X 21 s-crtl.ads
+50M12*FILEs{20|67M9}
+53I12*int{integer}
+X 23 s-ficobl.ads
+42K16*File_Control_Block 19|56w13 65r39 23|159e30
+82P9*AFCB_Ptr(84R9) 19|65r58
+86m7*Stream{11|41M12} 19|121r24 135r24
+X 24 s-fileio.ads
+39K16*File_IO 19|57w13 120r14 134r14 24|255e19
+152U14*Check_File_Open 19|120s22 134s22
+X 42 unchconv.ads
+20v10*Unchecked_Conversion 19|58w6 112r9 126r9
+

@@ -1,0 +1,310 @@
+V "GNAT Lib v2017"
+A -O2
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwe
+A -gnatyg
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_UNCHECKED_ACCESS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U posix.configurable_file_limits%b  posix-configurable_file_limits.adb  601d0b12 NE OO PK IU
+W posix%s		posix.adb		posix.ali
+W posix.c%s		posix-c.adb		posix-c.ali
+W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
+
+U posix.configurable_file_limits%s  posix-configurable_file_limits.ads  45571dc1 EE NE OO PK IU
+W posix%s		posix.adb		posix.ali
+W posix.io%s		posix-io.adb		posix-io.ali
+W posix.limits%s	posix-limits.ads	posix-limits.ali
+W posix.options%s	posix-options.ads	posix-options.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-configurable_file_limits.ads  20170516104058 473441e6 posix.configurable_file_limits%s
+D posix-configurable_file_limits.adb  20170516104058 f0e40d3f posix.configurable_file_limits%b
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-io.ads		20170516104058 0235a363 posix.io%s
+D posix-limits.ads	20171229062448 1f0bd7b1 posix.limits%s
+D posix-options.ads	20171229062448 1f5d28f5 posix.options%s
+D posix-permissions.ads	20170516104058 501242a1 posix.permissions%s
+D posix-process_identification.ads  20170516104058 6458fdd5 posix.process_identification%s
+D system.ads		20170516105953 6326c08a system%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 9 posix.ads
+43K9*POSIX 642e10 11|37w6 38r6 39r6 40r6 41r9 43r41 45r37 47r36 48r14 49r32
+. 50r14 51r43 54r39 57r39 58r14 60r35 61r14 64r47 66r43 68r42 69r14 70r38
+. 71r14 72r44 73r14 75r40 76r14 79r48 81r44 83r43 84r14 85r39 86r14 87r45
+. 88r14 90r41 91r14 94r45 96r41 98r40 99r14 100r36 101r14 102r42 103r14 105r38
+. 106r14 108r45 110r41 112r40 113r14 114r36 115r14 116r42 117r14 119r38 120r14
+. 123r48 125r44 127r43 128r14 129r39 130r14 131r45 132r14 134r41 135r14 138r52
+. 139r14 140r48 141r14 142r47 143r14 144r43 145r14 147r54 149r50 151r54 153r50
+. 155r53 157r49 164r46 166r50 171r45 172r13 173r41 174r13 181r5 12|39r6 40r6
+. 42r14 44r8 45r8 58r18 61r14 64r18 67r14 70r18 74r14 79r18 100r14 115r18
+. 134r14 151r18 160r14 169r41 175r37 181r36 188r32 199r47 205r43 211r42 218r38
+. 229r48 235r44 241r43 248r39 259r45 265r41 271r40 278r36 285r45 291r41 297r40
+. 304r36 315r48 321r44 327r43 334r39 345r52 351r48 361r47 367r43 377r54 383r50
+. 393r54 399r50 409r53 415r49 423r46 429r50 435r45 436r13 438r14 440r15 443r41
+. 444r13 446r14 447r37 450r5
+63B12*Change_Owner_Restriction{boolean} 12|346r14 352r14
+65B12*Filename_Truncation{boolean} 12|362r14 368r14
+71I9*IO_Count<long_integer>
+108I12*Link_Limit_Maxima{natural} 11|48r20 50r20 12|182r14 184r14 185r38
+. 189r14 191r14 192r34
+112I12*Input_Line_Limit_Maxima{71I9} 11|69r20 71r20 12|212r14 214r14 215r39
+. 219r14 221r14 222r35
+116I12*Input_Queue_Limit_Maxima{71I9} 11|84r20 86r20 12|242r14 244r14 245r39
+. 249r14 251r14 252r35
+120I12*Filename_Limit_Maxima{natural} 11|99r20 101r20 12|272r14 274r14 275r38
+. 279r14 281r14 282r34
+124I12*Pathname_Limit_Maxima{natural} 11|113r20 115r20 12|298r14 300r14 301r38
+. 305r14 307r14 308r34
+128I12*Pipe_Limit_Maxima{71I9} 11|128r20 130r20 12|328r14 330r14 331r38 335r14
+. 337r14 338r34
+145E9*POSIX_Character<character>
+150e4*NUL{145E9} 12|81r54 118r54 153r54
+183A9*POSIX_String(145E9)<integer> 12|81r27 118r27 153r27
+193A12*Pathname{183A9}<integer> 11|43r47 47r42 51r49 57r45 64r53 68r48 72r50
+. 79r54 83r49 87r51 94r51 98r46 102r48 108r51 112r46 116r48 123r54 127r49
+. 131r51 138r58 142r53 147r60 151r60 155r59 166r56 171r51 12|58r24 64r24
+. 70r24 79r24 115r24 151r24 169r47 181r42 199r53 211r48 229r54 241r49 259r51
+. 271r46 285r51 297r46 315r54 327r49 345r58 361r53 377r60 393r60 409r59 429r56
+. 435r51
+255I9*Error_Code<integer>
+X 10 posix-c.ads
+42K15*C 2642e12 12|39w12 44r14
+60I9*int<integer> 12|51r47 54r29 54r41 59r17 62r17 65r17 68r17 71r17 75r17
+. 80r17 101r17 104r21 116r17 135r17 139r28 152r17 161r17 162r28
+68I9*long<long_integer> 12|51r59 54r53 72r25 72r38 76r25 76r38 117r25 117r38
+. 119r16 136r25 136r38 137r16 185r32 192r28 215r33 222r29 245r33 252r29 275r32
+. 282r28 301r32 308r28 331r32 338r28 440r9 447r31
+98E12*char{9|145E9}
+99P9*char_ptr(98E12) 12|51r30
+349N4*PC_ASYNC_IO 12|396r38 402r34
+350N4*PC_CHOWN_RESTRICTED 12|348r38 354r34
+351N4*PC_LINK_MAX 12|172r36 178r32 185r19 192r15
+352N4*PC_MAX_CANON 12|202r36 208r32 215r19 222r15
+353N4*PC_MAX_INPUT 12|232r36 238r32 245r19 252r15
+354N4*PC_NAME_MAX 12|262r36 268r32 275r19 282r15
+355N4*PC_NO_TRUNC 12|364r38 370r34
+356N4*PC_PATH_MAX 12|288r36 294r32 301r19 308r15
+357N4*PC_PIPE_BUF 12|318r36 324r32 331r19 338r15
+358N4*PC_PRIO_IO 12|412r38 418r34
+359N4*PC_SYNC_IO 12|380r38 386r34
+360N4*PC_SOCK_MAXBUF 12|426r32 432r36 439r19 447r15
+1095a4*fpathconf_LINKNAME{string} 12|55r33
+1189a4*pathconf_LINKNAME{string} 12|52r32
+X 11 posix-configurable_file_limits.ads
+41K15*Configurable_File_Limits 9|43k9 11|181l11 181e35 12|42b20 450l11 450t35
+43V13*Link_Is_Limited{boolean} 43>30 53r15 12|169b13 173l8 173t23
+43a30 Pathname{9|193A12} 12|169b30 172r26
+45V13*Link_Is_Limited{boolean} 45>30 56r15 12|175b13 179l8 179t23
+45i30 File{14|47I9} 12|175b30 178r26
+47V13*Link_Limit{9|108I12} 47>25 59r15 12|181b13 186l8 186t18
+47a25 Pathname{9|193A12} 12|181b25 185r9
+49V13*Link_Limit{9|108I12} 49>25 62r15 12|188b13 193l8 193t18
+49i25 File{14|47I9} 12|188b25 192r9
+51V13*Links_Are_Limited=53:15{boolean}
+51a32 Pathname{9|193A12}
+54V13*Links_Are_Limited=56:15{boolean}
+54i32 File{14|47I9}
+57V13*Links_Maximum=59:15{9|108I12}
+57a28 Pathname{9|193A12}
+60V13*Links_Maximum=62:15{9|108I12}
+60i28 File{14|47I9}
+64V13*Input_Line_Is_Limited{boolean} 64>36 12|199b13 203l8 203t29
+64a36 Pathname{9|193A12} 12|199b36 202r26
+66V13*Input_Line_Is_Limited{boolean} 66>36 12|205b13 209l8 209t29
+66i36 File{14|47I9} 12|205b36 208r26
+68V13*Input_Line_Limit{9|112I12} 68>31 74r15 12|211b13 216l8 216t24
+68a31 Pathname{9|193A12} 12|211b31 215r9
+70V13*Input_Line_Limit{9|112I12} 70>31 77r15 12|218b13 223l8 223t24
+70i31 File{14|47I9} 12|218b31 222r9
+72V13*Input_Line_Maximum=74:15{9|112I12}
+72a33 Pathname{9|193A12}
+75V13*Input_Line_Maximum=77:15{9|112I12}
+75i33 File{14|47I9}
+79V13*Input_Queue_Is_Limited{boolean} 79>37 12|229b13 233l8 233t30
+79a37 Pathname{9|193A12} 12|229b37 232r26
+81V13*Input_Queue_Is_Limited{boolean} 81>37 12|235b13 239l8 239t30
+81i37 File{14|47I9} 12|235b37 238r26
+83V13*Input_Queue_Limit{9|116I12} 83>32 89r15 12|241b13 246l8 246t25
+83a32 Pathname{9|193A12} 12|241b32 245r9
+85V13*Input_Queue_Limit{9|116I12} 85>32 92r15 12|248b13 253l8 253t25
+85i32 File{14|47I9} 12|248b32 252r9
+87V13*Input_Queue_Maximum=89:15{9|116I12}
+87a34 Pathname{9|193A12}
+90V13*Input_Queue_Maximum=92:15{9|116I12}
+90i34 File{14|47I9}
+94V13*Filename_Is_Limited{boolean} 94>34 12|259b13 263l8 263t27
+94a34 Pathname{9|193A12} 12|259b34 262r26
+96V13*Filename_Is_Limited{boolean} 96>34 12|265b13 269l8 269t27
+96i34 File{14|47I9} 12|265b34 268r26
+98V13*Filename_Limit{9|120I12} 98>29 104r15 12|271b13 276l8 276t22
+98a29 Pathname{9|193A12} 12|271b29 275r9
+100V13*Filename_Limit{9|120I12} 100>29 107r15 12|278b13 283l8 283t22
+100i29 File{14|47I9} 12|278b29 282r9
+102V13*Filename_Maximum=104:15{9|120I12}
+102a31 Pathname{9|193A12}
+105V13*Filename_Maximum=107:15{9|120I12}
+105i31 File{14|47I9}
+108V13*Pathname_Is_Limited{boolean} 108>34 12|285b13 289l8 289t27
+108a34 Pathname{9|193A12} 12|285b34 288r26
+110V13*Pathname_Is_Limited{boolean} 110>34 12|291b13 295l8 295t27
+110i34 File{14|47I9} 12|291b34 294r26
+112V13*Pathname_Limit{9|124I12} 112>29 118r15 12|297b13 302l8 302t22
+112a29 Pathname{9|193A12} 12|297b29 301r9
+114V13*Pathname_Limit{9|124I12} 114>29 121r15 12|304b13 309l8 309t22
+114i29 File{14|47I9} 12|304b29 308r9
+116V13*Pathname_Maximum=118:15{9|124I12}
+116a31 Pathname{9|193A12}
+119V13*Pathname_Maximum=121:15{9|124I12}
+119i31 File{14|47I9}
+123V13*Pipe_Length_Is_Limited{boolean} 123>37 12|315b13 319l8 319t30
+123a37 Pathname{9|193A12} 12|315b37 318r26
+125V13*Pipe_Length_Is_Limited{boolean} 125>37 12|321b13 325l8 325t30
+125i37 File{14|47I9} 12|321b37 324r26
+127V13*Pipe_Length_Limit{9|128I12} 127>32 133r15 12|327b13 332l8 332t25
+127a32 Pathname{9|193A12} 12|327b32 331r9
+129V13*Pipe_Length_Limit{9|128I12} 129>32 136r15 12|334b13 339l8 339t25
+129i32 File{14|47I9} 12|334b32 338r9
+131V13*Pipe_Length_Maximum=133:15{9|128I12}
+131a34 Pathname{9|193A12}
+134V13*Pipe_Length_Maximum=136:15{9|128I12}
+134i34 File{14|47I9}
+138V13*Change_Owner_Is_Restricted{16|44E12} 138>41 12|345b13 349l8 349t34
+138a41 Pathname{9|193A12} 12|345b41 348r28
+140V13*Change_Owner_Is_Restricted{16|44E12} 140>41 12|351b13 355l8 355t34
+140i41 File{14|47I9} 12|351b41 354r28
+142V13*Filename_Is_Truncated{16|46E12} 142>36 12|361b13 365l8 365t29
+142a36 Pathname{9|193A12} 12|361b36 364r28
+144V13*Filename_Is_Truncated{16|46E12} 144>36 12|367b13 371l8 371t29
+144i36 File{14|47I9} 12|367b36 370r28
+147V13*Synchronized_IO_Is_Supported{boolean} 147>43 12|377b13 381l8 381t36
+147a43 Pathname{9|193A12} 12|377b43 380r28
+149V13*Synchronized_IO_Is_Supported{boolean} 149>43 12|383b13 387l8 387t36
+149i43 File{14|47I9} 12|383b43 386r28
+151V13*Asynchronous_IO_Is_Supported{boolean} 151>43 12|393b13 397l8 397t36
+151a43 Pathname{9|193A12} 12|393b43 396r28
+153V13*Asynchronous_IO_Is_Supported{boolean} 153>43 12|399b13 403l8 403t36
+153i43 File{14|47I9} 12|399b43 402r28
+155V13*Prioritized_IO_Is_Supported{boolean} 155>42 12|409b13 413l8 413t35
+155a42 Pathname{9|193A12} 12|409b42 412r28
+157V13*Prioritized_IO_Is_Supported{boolean} 157>42 12|415b13 419l8 419t35
+157i42 File{14|47I9} 12|415b42 418r28
+164V13*Socket_Buffer_Is_Limited{boolean} 164>39 12|423b13 427l8 427t32
+164i39 File{14|47I9} 12|423b39 426r26
+166V13*Socket_Buffer_Is_Limited{boolean} 166>39 12|429b13 433l8 433t32
+166a39 Pathname{9|193A12} 12|429b39 432r26
+171V13*Socket_Buffer_Limit{15|165I12} 171>34 12|435b13 441l8 441t27
+171a34 Pathname{9|193A12} 12|435b34 439r9
+173V13*Socket_Buffer_Limit{15|165I12} 173>34 12|443b13 448l8 448t27
+173i34 File{14|47I9} 12|443b34 447r9
+X 12 posix-configurable_file_limits.adb
+51V13 pathconf{10|68I9} 51>23 51>40 52b<c,pathconf>22 87s10 121s17 155s14
+51p23 path{10|99P9}
+51i40 name{10|60I9}
+54V13 fpathconf{10|68I9} 54>24 54>34 55b<c,fpathconf>22 104s10 139s17 162s17
+54i24 fd{10|60I9}
+54i34 name{10|60I9}
+57V13 Is_Limited{boolean} 58>7 59>7 78b13 97l8 97t18 172s14 202s14 232s14
+. 262s14 288s14 318s14 432s14
+58a7 Pathname{9|193A12} 79b7 81r43
+59i7 PC_Code{10|60I9} 80b7 88r53
+60V13 Is_Limited{boolean} 61>7 62>7 99b13 112l8 112t18 178s14 208s14 238s14
+. 268s14 294s14 324s14 426s14
+61i7 File{14|47I9} 100b7 104r26
+62i7 PC_Code{10|60I9} 101b7 104r33
+63V13 Is_Supported{boolean} 64>7 65>7 150b13 157l8 157t20 348s14 364s14 380s14
+. 396s14 412s14
+64a7 Pathname{9|193A12} 151b7 153r43
+65i7 PC_Code{10|60I9} 152b7 156r52
+66V13 Is_Supported{boolean} 67>7 68>7 159b13 163l8 163t20 354s14 370s14 386s14
+. 402s14 418s14
+67i7 File{14|47I9} 160b7 162r33
+68i7 PC_Code{10|60I9} 161b7 162r40
+69V13 Limit{10|68I9} 70>7 71>7 72>7 114b13 131l8 131t13 184s33 214s39 244s40
+. 274s37 300s37 330s33 438s49
+70a7 Pathname{9|193A12} 115b7 118r43
+71i7 PC_Code{10|60I9} 116b7 122r71
+72i7 Default_Maximum{10|68I9} 117b7 127r17
+73V13 Limit{10|68I9} 74>7 75>7 76>7 133b13 148l8 148t13 191s33 221s39 251s40
+. 281s37 307s37 337s33 446s49
+74i7 File{14|47I9} 134b7 139r33
+75i7 PC_Code{10|60I9} 135b7 139r40
+76i7 Default_Maximum{10|68I9} 136b7 144r17
+81a7 Pathname_With_NUL=81:52{9|183A9} 87r20 88r10
+118a7 Pathname_With_NUL=118:52{9|183A9} 122r9 122r28
+119i7 Result{10|68I9} 121m7 123r10 129r17
+137i7 Result{10|68I9} 139m7 140r10 146r17
+153a7 Pathname_With_NUL=153:52{9|183A9} 155r24 156r9
+X 13 posix-implementation.ads
+42K15*Implementation 12|40w12 45r14 13|389e25
+90U14*Raise_POSIX_Error 12|91s13 106s13 125s13 142s13
+127V13*Not_Implemented_Neg_One{10|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{10|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{10|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{10|60I9} 141i<c,notsup_direct>22
+259V13*Fetch_Errno{9|255I9} 12|90s13 105s13 124s13 141s13
+262U14*Store_Errno 12|83s7 103s7
+X 14 posix-io.ads
+45K15*IO 11|38w12 45r43 49r38 54r45 60r41 66r49 70r44 75r46 81r50 85r45 90r47
+. 96r47 100r42 105r44 110r47 114r42 119r44 125r50 129r45 134r47 140r54 144r49
+. 149r56 153r56 157r55 164r52 173r47 12|61r20 67r20 74r20 100r20 134r20 160r20
+. 175r43 188r38 205r49 218r44 235r50 248r45 265r47 278r42 291r47 304r42 321r50
+. 334r45 351r54 367r49 383r56 399r56 415r55 423r52 443r47 14|268e13
+47I9*File_Descriptor<integer> 11|45r46 49r41 54r48 60r44 66r52 70r47 75r49
+. 81r53 85r48 90r50 96r50 100r45 105r47 110r50 114r45 119r47 125r53 129r48
+. 134r50 140r57 144r52 149r59 153r59 157r58 164r55 173r50 12|61r23 67r23
+. 74r23 100r23 134r23 160r23 175r46 188r41 205r52 218r47 235r53 248r48 265r50
+. 278r45 291r50 304r45 321r53 334r48 351r57 367r52 383r59 399r59 415r58 423r55
+. 443r50
+X 15 posix-limits.ads
+41K15*Limits 11|39w12 58r20 61r20 73r20 76r20 88r20 91r20 103r20 106r20 117r20
+. 120r20 132r20 135r20 172r19 174r19 12|436r19 438r20 440r21 444r19 446r20
+. 447r43 15|173e17
+121I12*Filename_Maxima{9|120I12} 11|103r27 106r27
+125I12*Input_Line_Maxima{9|112I12} 11|73r27 76r27
+127I12*Input_Queue_Maxima{9|116I12} 11|88r27 91r27
+129I12*Links_Maxima{9|108I12} 11|58r27 61r27
+140I12*Pathname_Maxima{9|124I12} 11|117r27 120r27
+142I12*Pipe_Length_Maxima{9|128I12} 11|132r27 135r27
+165I12*Socket_Buffer_Maxima{9|71I9} 11|172r26 174r26 12|436r26 438r27 440r28
+. 444r26 446r27 447r50
+X 16 posix-options.ads
+41K15*Options 11|40w12 139r20 141r20 143r20 145r20 16|114e18
+44B12*Change_Owner_Restriction{9|63E12} 11|139r28 141r28
+46B12*Filename_Truncation{9|65E12} 11|143r28 145r28
+
