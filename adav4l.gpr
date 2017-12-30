@@ -31,7 +31,7 @@ project Adav4L is
                   when "False" =>
 
                   when "True" =>
-                     for Source_Dirs use ("src", "deps/include_v4l2");
+                     for Source_Dirs use ("src", "deps/include_v4l2", "deps");
                      for Runtime ("ada") use "native";
                end case;
          end case;
@@ -42,6 +42,21 @@ project Adav4L is
       case Build is
 
          when "Debug" =>
+
+            case Library_Type is
+
+               when "relocatable" =>
+
+               when "static" =>
+
+                  case Threads is
+
+                     when "False" =>
+
+                     when "True" =>
+                        for Switches ("ada") use ("-lv4l2", "-g", "-g");
+                  end case;
+            end case;
 
          when "Production" =>
 
@@ -56,11 +71,91 @@ project Adav4L is
                      when "False" =>
 
                      when "True" =>
-                        for Switches ("ada") use ("-lv4l2", "-g");
+                        for Switches ("ada") use ("-lv4l2", "-g", "-fprofile-generate", "-fprofile-generate", "-fprofile-generate", "-fprofile-generate", "-fprofile-generate");
                   end case;
             end case;
       end case;
    end Linker;
+
+   package Builder is
+
+      case Build is
+
+         when "Debug" =>
+
+            case Library_Type is
+
+               when "relocatable" =>
+
+               when "static" =>
+
+                  case Threads is
+
+                     when "False" =>
+
+                     when "True" =>
+                        for Switches ("ada") use ("-s", "-g");
+                  end case;
+            end case;
+
+         when "Production" =>
+
+            case Library_Type is
+
+               when "relocatable" =>
+
+               when "static" =>
+
+                  case Threads is
+
+                     when "False" =>
+
+                     when "True" =>
+                        for Switches ("ada") use ("-s", "-g");
+                  end case;
+            end case;
+      end case;
+   end Builder;
+
+   package Compiler is
+
+      case Build is
+
+         when "Debug" =>
+
+            case Library_Type is
+
+               when "relocatable" =>
+
+               when "static" =>
+
+                  case Threads is
+
+                     when "False" =>
+
+                     when "True" =>
+                        for Switches ("ada") use ("-g");
+                  end case;
+            end case;
+
+         when "Production" =>
+
+            case Library_Type is
+
+               when "relocatable" =>
+
+               when "static" =>
+
+                  case Threads is
+
+                     when "False" =>
+
+                     when "True" =>
+                        for Switches ("ada") use ("-gnatyy2", "-gnatyy1", "-gnatVa", "-gnatwae.e", "-g", "-ftest-coverage", "-fprofile-arcs", "-fprofile-arcs", "-gnatf", "-fprofile-arcs", "-fprofile-arcs", "-fprofile-arcs");
+                  end case;
+            end case;
+      end case;
+   end Compiler;
 
 end Adav4L;
 

@@ -5,7 +5,7 @@ with Interfaces.C; use Interfaces.C;
 
 package stddef_h is
 
-   --  unsupported macro: NULL ((void *)0)
+  --  unsupported macro: NULL ((void *)0)
   -- Copyright (C) 1989-2015 Free Software Foundation, Inc.
   --This file is part of GCC.
   --GCC is free software; you can redistribute it and/or modify
@@ -75,8 +75,12 @@ package stddef_h is
 
   -- __size_t is a typedef on FreeBSD 5, must not trash it.  
   -- __size_t is also a typedef on VMS.   
-   subtype size_t is unsigned_long;  -- /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:216
-
+  -- Using Intefaces.C size_t so warning for hiding are OK to be suppressed
+  pragma Warnings (Off, "***");
+  subtype size_t is Interfaces.C.size_t;
+  pragma Warnings (On, "***");
+  -- /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:216
+                                          
   -- Wide character type.
   --   Locale-writers should change this as necessary to
   --   be big enough to hold unique values not between 0 and 127,

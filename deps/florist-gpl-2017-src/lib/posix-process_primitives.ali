@@ -2,9 +2,7 @@ V "GNAT Lib v2017"
 A -O2
 A -gnatA
 A -g
-A -gnatwa
-A -gnatwe
-A -gnatyg
+A -gnatp
 A -mtune=generic
 A -march=x86-64
 P SS ZX
@@ -29,7 +27,6 @@ RV SPARK_05
 
 U posix.process_primitives%b  posix-process_primitives.adb  fac16da2 NE OO PK IU
 W ada.tags%s		a-tags.adb		a-tags.ali
-W interfaces%s		interfac.ads		interfac.ali
 W posix%s		posix.adb		posix.ali
 W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
 W posix.unsafe_process_primitives%s  posix-unsafe_process_primitives.adb  posix-unsafe_process_primitives.ali

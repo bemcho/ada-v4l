@@ -2,9 +2,7 @@ V "GNAT Lib v2017"
 A -O2
 A -gnatA
 A -g
-A -gnatwa
-A -gnatwe
-A -gnatyg
+A -gnatp
 A -mtune=generic
 A -march=x86-64
 P SS ZX
@@ -29,7 +27,6 @@ U posix.process_environment%b  posix-process_environment.adb  eebe8785 NE OO PK 
 W ada%s			ada.ads			ada.ali
 W ada.command_line%s	a-comlin.adb		a-comlin.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
-W interfaces%s		interfac.ads		interfac.ali
 W posix%s		posix.adb		posix.ali
 W posix.c%s		posix-c.adb		posix-c.ali
 W posix.implementation%s  posix-implementation.adb  posix-implementation.ali

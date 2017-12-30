@@ -2,9 +2,7 @@ V "GNAT Lib v2017"
 A -O2
 A -gnatA
 A -g
-A -gnatwa
-A -gnatwe
-A -gnatyg
+A -gnatp
 A -mtune=generic
 A -march=x86-64
 P SS ZX
@@ -22,7 +20,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U posix.timers%b	posix-timers.adb	0769dabe OO PK IU
+U posix.timers%b	posix-timers.adb	0769dabe NE OO PK IU
 W ada.tags%s		a-tags.adb		a-tags.ali
 W posix%s		posix.adb		posix.ali
 W posix.implementation%s  posix-implementation.adb  posix-implementation.ali

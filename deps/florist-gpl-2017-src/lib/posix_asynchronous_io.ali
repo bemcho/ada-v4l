@@ -2,9 +2,7 @@ V "GNAT Lib v2017"
 A -O2
 A -gnatA
 A -g
-A -gnatwa
-A -gnatwe
-A -gnatyg
+A -gnatp
 A -mtune=generic
 A -march=x86-64
 P SS ZX

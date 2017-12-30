@@ -1,7 +1,6 @@
 pragma Ada_2005;
 pragma Style_Checks (Off);
 
-with Interfaces.C; use Interfaces.C;
 with System;
 
 package stdarg_h is
@@ -28,7 +27,7 @@ package stdarg_h is
   --  
 
   -- Define __gnuc_va_list.   
-   subtype uu_gnuc_va_list is System.Address;  -- /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:40
+  subtype uu_gnuc_va_list is System.Address;  -- /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:40
 
   -- Define the standard macros for the user,
   --   if this invocation was from the user program.   
