@@ -1,0 +1,249 @@
+V "GNAT Lib v2017"
+A -O2
+A -O2
+A -gnatA
+A -g
+A -gnatp
+A -gnatn
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_FIXED_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U posix.timers%b	posix-timers.adb	0769dabe NE OO PK IU
+W ada.tags%s		a-tags.adb		a-tags.ali
+W posix%s		posix.adb		posix.ali
+W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W unchecked_conversion%s
+
+U posix.timers%s	posix-timers.ads	926cf8f1 EE OO PF PK IU
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W posix%s		posix.adb		posix.ali
+W posix.c%s		posix-c.adb		posix-c.ali
+W posix.signals%s	posix-signals.adb	posix-signals.ali
+W system%s		system.ads		system.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-ioexce.ads		20170516105949 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-taside.ads		20170516105954 c6417f71 ada.task_identification%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-implementation-ok_signals.ads  20171229062448 ae9904fa posix.implementation.ok_signals%s
+D posix-process_identification.ads  20170516104058 6458fdd5 posix.process_identification%s
+D posix-signals.ads	20170516104058 6931d508 posix.signals%s
+D posix-timers.ads	20170516104059 0e6e36c1 posix.timers%s
+D posix-timers.adb	20170516104058 2d5c7cf3 posix.timers%b
+D system.ads		20170516105953 6326c08a system%s
+D s-atacco.ads		20170516105954 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-multip.ads		20170516105948 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-secsta.ads		20170516105955 9751b57e system.secondary_stack%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stausa.ads		20170516105954 017a0a05 system.stack_usage%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20170516105954 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-stposu.ads		20170516105949 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20170516105949 aedef97e system.stream_attributes%s
+D s-stratt.adb		20170516105953 56ef263e system.stream_attributes%b
+D s-tasinf.ads		20170516105952 2b3f8252 system.task_info%s
+D s-taspri.ads		20170516105950 f40ac08d system.task_primitives%s
+D s-taskin.ads		20170516105956 05d6152c system.tasking%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 11 posix.ads
+43K9*POSIX 642e10 17|37r6 38r6 39r9 47r30 52r17 53r54 56r18 57r55 61r15 62r32
+. 65r13 68r13 72r15 88r25 89r42 90r25 95r23 98r44 99r5 18|39r6 42r14 44r8
+. 45r8 49r7 49r35 60r17 69r54 80r18 89r55 104r15 116r15 120r29 133r50 145r50
+. 162r15 170r19 173r27 277r5
+214R9*Option_Set 610e17 17|47r36 98r22 18|221r17 237r17
+314N4*Invalid_Argument 18|216r60 218r54 235r57
+520R9*Timespec 595e14 17|52r23 53r60 56r24 57r61 61r21 62r38 65r19 68r19
+. 18|60r23 69r60 80r24 89r61 104r21 116r21 133r56 145r56
+556V13*To_Timespec{520R9} 18|71s14 91s14 137s14 153s14
+601M9 Bits 18|47r49
+609m10*Option{601M9} 17|98m34 18|221r38 237r38
+X 12 posix-c.ads
+42K15*C 2642e12 17|37w12 88r31 89r48 90r31 95r29 98r50 18|44r14 49r41 120r35
+. 170r25 173r33 200r15
+60I9*int<integer> 18|47r55 99r33 129r43 148r47 166r43 188r57 200r17 202r39
+. 248r52 271r61
+84I9*time_t<long_integer>
+158N4*CLOCK_REALTIME 17|89r50 18|120r37
+271N4*SIGEV_NONE 18|173r35
+293N4*SIGUSR1 18|175r27
+330N4*TIMER_ABSTIME 17|98r52
+461I9*clockid_t<integer> 17|88r33 18|98r18 108r29 128r18 136r29 147r21 152r28
+. 164r21 178r28
+549M9*timer_t 17|90r33 18|166r27 171r21 188r41 191r28 199r18 220r29 236r29
+. 247r22 252r29 263r10 271r45 274r48
+558r4*null_sigval{551R9} 18|176r27
+587R9*struct_sigevent 593e14 18|49r43 170r27
+588i7*sigev_notify{60I9} 18|173r12
+589i7*sigev_signo{60I9} 18|175m12
+590r7*sigev_value{551R9} 18|176m12
+608P9*sigevent_ptr(587R9) 18|165r16
+878R9*struct_timespec 881e14 18|51r37 105r20 117r20 129r19 134r20 148r23
+. 150r20
+879i7*tv_sec{84I9} 18|218r42
+893P9*timespec_ptr(878R9) 18|99r12
+897R9*struct_itimerspec 900e14 17|95r31 18|52r34 248r26
+898r7*it_interval{878R9} 18|82m19 91r52
+899r7*it_value{878R9} 18|62m19 71r52 216r33 218r33 235r30
+912P9*itimerspec_ptr(897R9) 18|201r15 202r16
+1061a4*clock_getres_LINKNAME{string} 18|149r39
+1063a4*clock_gettime_LINKNAME{string} 18|130r37
+1065a4*clock_settime_LINKNAME{string} 18|100r37
+1346a4*timer_create_LINKNAME{string} 18|167r39
+1348a4*timer_delete_LINKNAME{string} 18|189r39
+1350a4*timer_getoverrun_LINKNAME{string} 18|272r43
+1352a4*timer_gettime_LINKNAME{string} 18|249r40
+1354a4*timer_settime_LINKNAME{string} 18|203r37
+X 13 posix-implementation.ads
+42K15*Implementation 389e25 18|39w12 45r14
+93U14*Check 18|216s10 218s10 235s7
+103U14*Check 18|108s7 120s7 136s7 152s7 178s7 191s7 220s7 236s7 252s7 262s7
+105V13*Check{12|60I9} 18|274s23
+127V13*Not_Implemented_Neg_One{12|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{12|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{12|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{12|60I9} 141i<c,notsup_direct>22
+383V13*To_Struct_Timespec{12|878R9} 18|62s31 82s34 107s13 119s13
+384V13*To_Duration{duration} 18|71s27 91s27 137s27 153s27
+X 16 posix-signals.ads
+52K15*Signals 317e18 17|38w12 72r21 18|49r13 162r21
+167R9*Signal_Event<12|587R9> 17|72r29 18|49r21 162r29
+X 17 posix-timers.ads
+39K15*Timers 11|43k9 17|88E9 99l11 99e17 18|42b20 277l11 277t17
+41I9*Clock_ID<12|461I9> 44r30 60r15 64r15 67r15 71r15 88c9 89r30 18|103r15
+. 133r15 145r15 161r15
+42M9*Timer_ID<12|549M9> 72r50 73r43 75r19 80r19 83r38 84r36 85r41 90c9 18|162r50
+. 180r14 187r43 206r19 231r19 245r38 260r36 270r41
+44i4*Clock_Realtime{41I9} 64r27 67r27 89c4 18|133r27 145r27
+46R9*Timer_State 51r24 53r34 55r25 57r35 77r19 78r23 82r19 83r55 94c9 96e14
+. 18|59r24 69r34 79r25 89r35 208r19 209r23 233r19 245r55 250r12
+47R9*Timer_Options<11|214R9> 48r30 76r19 81r19
+48r4*Absolute_Timer{47R9} 97c4 18|215r20
+50U14*Set_Initial 51=7 52>7 18|58b14 63l8 63t19
+51r7 State{46R9} 18|59b7 62m7
+52r7 Initial{11|520R9} 18|60b7 62r51
+53V13*Get_Initial{11|520R9} 53>26 18|69b13 72l8 72t19
+53r26 State{46R9} 18|69b26 71r40
+54U14*Set_Interval 55=7 56>7 18|78b14 83l8 83t20
+55r7 State{46R9} 18|79b7 82m7
+56r7 Interval{11|520R9} 18|80b7 82r54
+57V13*Get_Interval{11|520R9} 57>27 18|89b13 92l8 92t20
+57r27 State{46R9} 18|89b27 91r40
+59U14*Set_Time 60>7 61>7 18|102b14 109l8 109t16
+60i7 Clock{41I9} 18|103b7 108r40
+61r7 Value{11|520R9} 18|104b7 107r33
+62U14*Set_Time 62>24 18|115b14 121l8 121t16
+62r24 Value{11|520R9} 18|116b7 119r33
+63V13*Get_Time{11|520R9} 64>7 18|132b13 138l8 138t16
+64i7 Clock{41I9} 18|133b7 136r40
+66V13*Get_Resolution{11|520R9} 67>7 18|144b13 154l8 154t22
+67i7 Clock{41I9} 18|145b7 152r39
+70V13*Create_Timer{42M9} 71>7 72>7 18|160b13 181l8 181t20
+71i7 Clock{41I9} 18|161b7 178r39
+72r7 Event{16|167R9} 18|162b7 170r66
+73U14*Delete_Timer 73=28 18|187b14 192l8 192t20
+73m28 Timer{42M9} 18|187b28 191r37
+74U14*Arm_Timer 75>7 76>7 77>7 78<7 18|205b14 224l8 224t17
+75m7 Timer{42M9} 18|206b7 220r38
+76r7 Options{47R9} 18|207b7 215r10 221r29
+77r7 New_State{46R9} 18|208b7 216r17 218r17 222r9
+78r7 Old_State{46R9} 18|209b7 223r9
+79U14*Arm_Timer 80>7 81>7 82>7 18|230b14 239l8 239t17
+80m7 Timer{42M9} 18|231b7 236r38
+81r7 Options{47R9} 18|232b7 237r29
+82r7 New_State{46R9} 18|233b7 235r14 238r9
+83V13*Get_Timer_State{46R9} 83>30 18|245b13 254l8 254t23
+83m30 Timer{42M9} 18|245b30 252r38
+84U14*Disarm_Timer 84>28 18|260b14 264l8 264t20
+84m28 Timer{42M9} 18|260b28 263r19
+85V13*Get_Timer_Overruns{natural} 85>33 18|270b13 275l8 275t26
+85m33 Timer{42M9} 18|270b33 274r57
+95r7*State{12|897R9} 18|62m13 71r46 82m13 91r46 216r27 218r27 222m19 223m19
+. 235r24 238m19 252m49
+X 18 posix-timers.adb
+47V13 To_int[47|20]{12|60I9} 221s9 237s9
+48V13 To_Struct_Sigevent[47|20]{12|587R9} 170s46
+51r4 Zero_Timespec{12|878R9} 216r45 235r42
+52r4 Zero_State{12|897R9} 263r30
+97V13 clock_settime{12|60I9} 98>7 99>7 100b<c,clock_settime>22 108s14 120s14
+98i7 clock_id{12|461I9}
+99p7 tp{12|893P9}
+105r7 TS{12|878R9} 107m7 108r48
+117r7 TS{12|878R9} 119m7 120r53
+127V13 clock_gettime{12|60I9} 128>7 129^7 130b<c,clock_gettime>22 136s14
+128i7 clock_id{12|461I9}
+129p7 tp(12|878R9)
+134r7 TS{12|878R9} 136m48 136r48 137r40
+146V16*clock_getres{12|60I9} 147>10 148^10 149b<c,clock_getres>25 152s14
+147i10 clock_id{12|461I9}
+148p10 res(12|878R9)
+150r7 TS{12|878R9} 152m47 152r47 153r40
+163V16*timer_create{12|60I9} 164>10 165>10 166^10 167b<c,timer_create>25
+. 178s14
+164i10 clock_id{12|461I9}
+165p10 evp{12|608P9}
+166p10 timerid(12|549M9)
+170r7 E{12|587R9} 173r10 175m10 176m10 179r10
+171m7 TID{12|549M9} 179m30 179r30 180r24
+188V16*timer_delete{12|60I9} 188>30 189b<c,timer_delete>25 191s14
+188m30 timer_id{12|549M9}
+198V13 timer_settime{12|60I9} 199>7 200>7 201>7 202>7 203b<c,timer_settime>22
+. 220s14 236s14 262s14
+199m7 timer_id{12|549M9}
+200i7 flags{12|60I9}
+201p7 value{12|912P9}
+202p7 ovalue{12|912P9}
+246V16*timer_gettime{12|60I9} 247>11 248^11 249b<c,timer_gettime>25 252s14
+247m11 timer_id{12|549M9}
+248p11 value(12|897R9)
+250r7 TS{17|46R9} 252m46 252r46 253r14
+271V16*timer_getoverrun{12|60I9} 271>34 272b<c,timer_getoverrun>25 274s30
+271m34 timer_id{12|549M9}
+X 34 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 47 unchconv.ads
+20v10*Unchecked_Conversion 18|40w6 47r27 48r39
+

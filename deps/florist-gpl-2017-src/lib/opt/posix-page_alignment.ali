@@ -1,0 +1,97 @@
+V "GNAT Lib v2017"
+A -O2
+A -O2
+A -gnatA
+A -g
+A -gnatp
+A -gnatn
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U posix.page_alignment%b  posix-page_alignment.adb  8416cb9c OO PK IU
+W posix%s		posix.adb		posix.ali
+W posix.configurable_system_limits%s  posix-configurable_system_limits.adb  posix-configurable_system_limits.ali  EA
+
+U posix.page_alignment%s  posix-page_alignment.ads  dffebc87 EE NE OO PK IU
+W posix%s		posix.adb		posix.ali
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-configurable_system_limits.ads  20170516104058 475868f7 posix.configurable_system_limits%s
+D posix-limits.ads	20171229062448 1f0bd7b1 posix.limits%s
+D posix-options.ads	20171229062448 1f5d28f5 posix.options%s
+D posix-page_alignment.ads  20170516104058 911b3609 posix.page_alignment%s
+D posix-page_alignment.adb  20170516104058 52559562 posix.page_alignment%b
+D system.ads		20170516105953 6326c08a system%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20170516105954 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 8 posix.ads
+43K9*POSIX 642e10 13|37w6 40r9 45r16 45r39 51r16 58r5 14|39r6 42r14 48r22
+. 124r5
+71I9*IO_Count<long_integer> 13|45r22 45r45 51r22 14|65r17 65r34 68r38 94r17
+. 96r11
+X 10 posix-configurable_system_limits.ads
+40K15*Configurable_System_Limits 165e37 14|39w12 40r29 48r28
+114V13*Page_Size{11|139I12} 14|48s55
+X 11 posix-limits.ads
+139I12*Page_Size_Range{natural}
+X 13 posix-page_alignment.ads
+40K15*Page_Alignment 8|43k9 13|58l11 58e25 14|42b20 124l11 124t25
+42V13*Truncate_To_Page{15|67M9} 43>7 14|54b13 62l8 62t24 83s28
+43m7 Addr{15|67M9} 14|55b8 58r17 58r25 60r17
+44V13*Truncate_To_Page{8|71I9} 45>7 14|64b13 72l8 72t24 99s21
+45i7 Offset{8|71I9} 14|65b8 68r17 68r27 70r17
+46V13*Adjust_Length{24|54I9} 47>7 48>7 14|78b13 91l8 91t21
+47m7 Addr{15|67M9} 14|79b8 83r21 83r46
+48i7 Length{24|54I9} 14|80b8 83r12
+50V13*Adjust_Length{24|54I9} 51>7 52>7 14|93b13 108l8 108t21
+51i7 Offset{8|71I9} 14|94b8 99r12 99r39
+52i7 Length{24|54I9} 14|95b8 100r12
+54V13*Length{24|54I9} 55>7 14|114b13 122l8 122t14
+55i7 Size{natural} 14|115b8 117r10 118r33 120r33
+X 14 posix-page_alignment.adb
+47i4 Page_Size{24|54I9} 57r10 58r34 67r10 68r48 84r10 87r16 90r14 90r31 101r10
+. 104r16 107r14 107r31
+81i7 L{24|54I9} 83m7 85r17 87r10 88r17 90r27
+96i7 O{8|71I9} 99m7 100r37
+97i7 L{24|54I9} 100m7 102r17 104r10 105r17 107r27
+X 15 system.ads
+37K9*System 13|38w6 39r6 43r14 43r37 47r16 48r16 49r13 52r16 53r13 56r13
+. 14|44r8 45r8 117r19 120r40 15|156e11
+67M9*Address 13|43r21 43r44 47r23 14|55r15 55r31 79r17
+71N4*Storage_Unit 14|117r26 120r47
+X 24 s-stoele.ads
+42K16*Storage_Elements 13|39w13 48r23 49r20 52r23 53r20 56r20 14|44r15 24|117e28
+54I9*Storage_Offset<long_integer> 13|48r40 49r37 52r40 53r37 56r37 14|47r25
+. 48r6 80r17 80r40 81r11 95r17 95r40 97r11 100r21 115r31 118r17 120r17
+81V14*"+"{15|67M9} 14|83s19
+86V14*"-"{15|67M9} 14|58s22
+91V14*"-"{54I9} 14|83s26
+96V14*"mod"{54I9} 14|58s30
+

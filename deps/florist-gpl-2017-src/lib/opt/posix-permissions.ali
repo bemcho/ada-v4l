@@ -1,0 +1,118 @@
+V "GNAT Lib v2017"
+A -O2
+A -O2
+A -gnatA
+A -g
+A -gnatp
+A -gnatn
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U posix.permissions%b	posix-permissions.adb	db5d5da7 NE OO PK IU
+W posix%s		posix.adb		posix.ali
+W posix.c%s		posix-c.adb		posix-c.ali
+W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
+W posix.permissions%s	posix-permissions.adb	posix-permissions.ali
+W posix.permissions.implementation%s  posix-permissions-implementation.adb  posix-permissions-implementation.ali
+
+U posix.permissions%s	posix-permissions.ads	501242a1 EE OO PK IU
+W ada.tags%s		a-tags.adb		a-tags.ali
+W posix%s		posix.adb		posix.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-permissions.ads	20170516104058 501242a1 posix.permissions%s
+D posix-permissions.adb	20170516104058 73d3b5b4 posix.permissions%b
+D posix-permissions-implementation.ads  20170516104058 2f51ed79 posix.permissions.implementation%s
+D system.ads		20170516105953 6326c08a system%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 9 posix.ads
+43K9*POSIX 642e10 12|37w6 38r9 81r5 13|39r6 40r6 41r6 42r14 44r8 45r8 46r8
+. 119r5
+X 10 posix-c.ads
+42K15*C 2642e12 13|39w12 44r14
+60I9*int<integer>
+431M9*mode_t 13|52r19 58r29 58r44 66r14 92r14 111r23
+1360a4*umask_LINKNAME{string} 13|59r29
+X 11 posix-implementation.ads
+42K15*Implementation 389e25 13|40w12 45r14
+77U14*Begin_Critical_Section 13|68s7
+78U14*End_Critical_Section 13|74s7
+127V13*Not_Implemented_Neg_One{10|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{10|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{10|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{10|60I9} 141i<c,notsup_direct>22
+X 12 posix-permissions.ads
+38K15*Permissions 9|43k9 12|81l11 81e22 13|41r12 42b20 46r14 119l11 119t22
+40E9*Permission 44e35 46r34
+41n7*Others_Execute{40E9} 57r36 63r36
+41n23*Others_Write{40E9} 57r21 63r21
+41n37*Others_Read{40E9} 57r7 63r7
+42n7*Group_Execute{40E9} 53r34 62r36
+42n23*Group_Write{40E9} 53r20 62r21
+42n37*Group_Read{40E9} 53r7 62r7
+43n7*Owner_Execute{40E9} 49r34 61r36
+43n23*Owner_Write{40E9} 49r20 61r21
+43n37*Owner_Read{40E9} 49r7 61r7
+44n7*Set_Group_ID{40E9} 67r7
+44n23*Set_User_ID{40E9} 69r7
+46A9*Permission_Set(boolean)<40E9> 48r36 48r54 52r36 52r54 56r37 56r55 60r37
+. 60r55 66r32 66r50 68r31 68r49 74r15 76r28 78r32 79r32 13|65r52 91r21 109r21
+. 110r25
+48a4*Owner_Permission_Set{46A9}
+52a4*Group_Permission_Set{46A9}
+56a4*Others_Permission_Set{46A9}
+60a4*Access_Permission_Set{46A9}
+66a4*Set_Group_ID_Set{46A9}
+68a4*Set_User_ID_Set{46A9}
+73V13*Get_Allowed_Process_Permissions{46A9} 13|65b13 84l8 84t39
+75U14*Set_Allowed_Process_Permissions 76>14 13|90b14 102l8 102t39
+76a14 Permissions{46A9} 13|91b7 93r33
+77U14*Set_Allowed_Process_Permissions 78>14 79<14 13|108b14 117l8 117t39
+78a14 Permissions{46A9} 13|109b7 112r33
+79a14 Old_Perms{46A9} 13|110b7 115m7
+X 13 posix-permissions.adb
+52m4 Cached_Umask{10|431M9} 69r22 70r18 71m10 76r15 100m7 114m7
+58V13 umask{10|431M9} 58>20 59b<c,umask>22 69s15 72s18 101s15 115s46
+58m20 c_mask{10|431M9}
+66m7 Mask{10|431M9} 69m7 70r10 71r26 72m10 72r25
+92m7 Mask{10|431M9} 97r29 100r23 101m7 101r22
+111m7 Mask{10|431M9} 114r23 115r53
+X 14 posix-permissions-implementation.ads
+40K27*Implementation 13|41w24 46r26 14|60e37
+53m4*File_Access_Permission_Bits{10|431M9} 13|76r33 93r50 112r50 116r9
+55V13*Form_Ada_Permission{12|46A9} 13|75s14 115s20
+57V13*Form_C_Permission{10|431M9} 13|93s14 112s14
+

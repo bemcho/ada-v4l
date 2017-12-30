@@ -1,0 +1,128 @@
+V "GNAT Lib v2017"
+A -O2
+A -O2
+A -gnatA
+A -g
+A -gnatp
+A -gnatn
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U posix.limits%s	posix-limits.ads	d38185d6 NE OO PK IU
+W posix%s		posix.adb		posix.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-limits.ads	20171229062448 1f0bd7b1 posix.limits%s
+D system.ads		20170516105953 6326c08a system%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+X 8 posix.ads
+43K9*POSIX 642e10 9|41r9 51r15 55r15 59r15 61r15 62r34 63r15 64r35 65r15
+. 67r15 73r15 77r15 78r35 79r15 89r15 95r15 100r15 101r37 102r15 114r7 120r7
+. 122r7 124r7 126r7 128r7 130r7 138r7 141r7 143r7 153r7 159r7 173r5
+71I9*IO_Count<long_integer> 9|62r40 64r41 78r41 101r43 165r36 166r14
+79i4*Portable_Groups_Maximum{natural} 9|61r21
+81I12*Groups_Maxima{natural} 9|124r13
+83i4*Portable_Argument_List_Maximum{natural} 9|51r21
+85I12*Argument_List_Maxima{natural} 9|114r13
+87i4*Portable_Child_Processes_Maximum{natural} 9|55r21
+89I12*Child_Processes_Maxima{natural} 9|120r13
+91i4*Portable_Open_Files_Maximum{natural} 9|73r21 100r21
+93I12*Open_Files_Maxima{natural} 9|138r13
+95i4*Portable_Stream_Maximum{natural} 9|89r21
+97I12*Stream_Maxima{natural} 9|153r13
+99i4*Portable_Time_Zone_String_Maximum{natural} 9|95r21
+101I12*Time_Zone_String_Maxima{natural} 9|159r13
+106i4*Portable_Link_Limit_Maximum{natural} 9|67r21
+108I12*Link_Limit_Maxima{natural} 9|130r13
+110i4*Portable_Input_Line_Limit_Maximum{71I9} 9|63r21
+112I12*Input_Line_Limit_Maxima{71I9} 9|126r13
+114i4*Portable_Input_Queue_Limit_Maximum{71I9} 9|65r21
+116I12*Input_Queue_Limit_Maxima{71I9} 9|128r13
+118i4*Portable_Filename_Limit_Maximum{natural} 9|59r21
+120I12*Filename_Limit_Maxima{natural} 9|122r13
+122i4*Portable_Pathname_Limit_Maximum{natural} 9|77r21
+124I12*Pathname_Limit_Maxima{natural} 9|141r13
+126i4*Portable_Pipe_Limit_Maximum{71I9} 9|79r21 102r21
+128I12*Pipe_Limit_Maxima{71I9} 9|143r13
+X 9 posix-limits.ads
+41K15*Limits 8|43k9 9|173l11 173e17
+50i4*Portable_Argument_List_Maximum=51:21{natural}
+52i4*Portable_Asynchronous_IO_Maximum{natural}
+54i4*Portable_Child_Processes_Maximum=55:21{natural}
+56N4*Portable_Clock_Resolution_Minimum
+58i4*Portable_Filename_Maximum=59:21{natural}
+60i4*Portable_Groups_Maximum=61:21{natural}
+62i4*Portable_Input_Line_Maximum=63:21{8|71I9}
+64i4*Portable_Input_Queue_Maximum=65:21{8|71I9}
+66i4*Portable_Links_Maximum=67:21{natural}
+68i4*Portable_List_IO_Maximum{natural}
+70i4*Portable_Message_Priority_Maximum{natural}
+72i4*Portable_Open_Files_Maximum=73:21{natural}
+74i4*Portable_Open_Message_Queues_Maximum{natural}
+76i4*Portable_Pathname_Maximum=77:21{natural}
+78i4*Portable_Pipe_Length_Maximum=79:21{8|71I9}
+80i4*Portable_Queued_Signals_Maximum{natural}
+82i4*Portable_Realtime_Signals_Maximum{natural}
+84i4*Portable_Semaphores_Maximum{natural}
+86i4*Portable_Semaphores_Value_Maximum{natural}
+88i4*Portable_Streams_Maximum=89:21{natural}
+90i4*Portable_Timer_Overruns_Maximum{natural}
+92i4*Portable_Timers_Maximum{natural}
+94i4*Portable_Time_Zone_String_Maximum=95:21{natural}
+99i4*Portable_File_Descriptor_Set_Maximum=100:21{natural}
+101i4*Portable_Socket_Buffer_Maximum=102:21{8|71I9}
+103i4*Portable_Socket_IO_Vector_Maximum{natural}
+105i4*Portable_Socket_Connection_Maximum{natural}
+107i4*Portable_XTI_IO_Vector_Maximum{natural}
+113I12*Argument_List_Maxima{8|85I12}
+115I12*Asynchronous_IO_Maxima{natural}
+117I12*Asynchronous_IO_Priority_Delta_Maxima{natural}
+119I12*Child_Processes_Maxima{8|89I12}
+121I12*Filename_Maxima{8|120I12}
+123I12*Groups_Maxima{8|81I12}
+125I12*Input_Line_Maxima{8|112I12}
+127I12*Input_Queue_Maxima{8|116I12}
+129I12*Links_Maxima{8|108I12}
+131I12*List_IO_Maxima{natural}
+133I12*Message_Priority_Maxima{natural}
+135I12*Open_Message_Queues_Maxima{natural}
+137I12*Open_Files_Maxima{8|93I12}
+139I12*Page_Size_Range{natural}
+140I12*Pathname_Maxima{8|124I12}
+142I12*Pipe_Length_Maxima{8|128I12}
+144I12*Queued_Signals_Maxima{natural}
+146I12*Realtime_Signals_Maxima{natural}
+148I12*Semaphores_Maxima{natural}
+150I12*Semaphores_Value_Maxima{natural}
+152I12*Streams_Maxima{8|97I12}
+154I12*Timer_Overruns_Maxima{natural}
+156I12*Timers_Maxima{natural}
+158I12*Time_Zone_String_Maxima{8|101I12}
+163I12*File_Descriptor_Set_Maxima{natural}
+165I12*Socket_Buffer_Maxima{8|71I9}
+167I12*Socket_IO_Vector_Maxima{natural}
+169I12*Socket_Connection_Maxima{natural}
+171I12*XTI_IO_Vector_Maxima{natural}
+

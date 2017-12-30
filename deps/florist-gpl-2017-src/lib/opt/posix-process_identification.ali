@@ -1,0 +1,197 @@
+V "GNAT Lib v2017"
+A -O2
+A -O2
+A -gnatA
+A -g
+A -gnatp
+A -gnatn
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U posix.process_identification%b  posix-process_identification.adb  e1585557 NE OO PK IU
+W ada.tags%s		a-tags.adb		a-tags.ali
+W posix%s		posix.adb		posix.ali
+W posix.implementation%s  posix-implementation.adb  posix-implementation.ali
+W system.aux_dec%s	s-auxdec.adb		s-auxdec.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.img_uns%s	s-imguns.adb		s-imguns.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+W system.val_uns%s	s-valuns.adb		s-valuns.ali
+
+U posix.process_identification%s  posix-process_identification.ads  916be6ed EE NE OO PK IU
+W posix%s		posix.adb		posix.ali
+W posix.c%s		posix-c.adb		posix-c.ali
+
+D ada.ads		20170516105951 76789da1 ada%s
+D a-except.ads		20170516105953 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105955 d3a89129 ada.tags%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D posix.ads		20171229062448 cc8a5267 posix%s
+D posix-c.ads		20171229062448 39b9495f posix.c%s
+D posix-implementation.ads  20170516104058 ee740e94 posix.implementation%s
+D posix-process_identification.ads  20170516104058 6458fdd5 posix.process_identification%s
+D posix-process_identification.adb  20170516104058 6b74a616 posix.process_identification%b
+D system.ads		20170516105953 6326c08a system%s
+D s-auxdec.ads		20170516105956 c61118a9 system.aux_dec%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-finmas.ads		20170516105954 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-imgint.ads		20170516105950 02dbe0c2 system.img_int%s
+D s-imguns.ads		20170516105952 9ff43cf7 system.img_uns%s
+D s-imguns.adb		20170516105953 470a82cb system.img_uns%b
+D s-intman.ads		20170516105949 47ba1e06 system.interrupt_management%s
+D s-linux.ads		20170516105951 2fda6ad1 system.linux%s
+D s-oscons.ads		20170516140513 5c5bfdaa system.os_constants%s
+D s-osinte.ads		20170516105949 e671c01a system.os_interface%s
+D s-parame.ads		20170516105955 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20170516105948 ede33ef8 system.pool_global%s
+D s-secsta.ads		20170516105955 9751b57e system.secondary_stack%s
+D s-soflin.ads		20170516105951 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105955 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105955 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170516105951 b16154c2 system.storage_pools%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105953 34867c83 system.unsigned_types%s
+D s-valint.ads		20170516105953 48a52a3f system.val_int%s
+D s-valuns.ads		20170516105955 10a8ed3b system.val_uns%s
+D unchconv.ads		20170516105948 ca2f9e18 unchecked_conversion%s
+X 9 posix.ads
+43K9*POSIX 642e10 12|37r6 38r9 75r35 85r52 94r27 98r33 99r24 100r25 101r5
+. 13|39r6 41r14 43r8 44r8 206r35 321r5
+81I12*Groups_Maxima{natural} 12|85r58
+145E9*POSIX_Character<character>
+183A9*POSIX_String(145E9)<integer> 12|75r41 13|206r41
+314N4*Invalid_Argument 13|116r42
+X 10 posix-c.ads
+42K15*C 2642e12 12|37w12 94r33 98r39 99r30 100r31 13|43r14 281r64
+60I9*int<integer> 13|109r56 126r59 192r44 267r44 281r23 281r66 286r34 288r25
+98E12*char{9|145E9}
+99P9*char_ptr(98E12) 13|207r32 209r18
+124V13*Form_POSIX_String{9|183A9} 13|215s14
+425I9*pid_t<integer> 12|94r35 98r41 13|50r27 63r31 109r28 109r42 117r23 117r40
+. 126r31 126r45 129r23 139r30
+427M9*gid_t 12|100r33 13|245r30 256r31 267r30 270r22
+429M9*uid_t 12|99r32 13|170r30 181r31 192r30 195r29
+1105a4*getegid_LINKNAME{string} 13|257r34
+1109a4*geteuid_LINKNAME{string} 13|182r34
+1111a4*getgid_LINKNAME{string} 13|246r33
+1117a4*getgroups_LINKNAME{string} 13|282r36
+1119a4*getlogin_LINKNAME{string} 13|208r35
+1123a4*getpid_LINKNAME{string} 13|51r30
+1125a4*getppid_LINKNAME{string} 13|64r34
+1133a4*getuid_LINKNAME{string} 13|171r33
+1288a4*setgid_LINKNAME{string} 13|268r33
+1290a4*setpgid_LINKNAME{string} 13|110r31 127r34
+1292a4*setsid_LINKNAME{string} 13|140r33
+1294a4*setuid_LINKNAME{string} 13|193r33
+X 11 posix-implementation.ads
+42K15*Implementation 389e25 13|39w12 44r14
+90U14*Raise_POSIX_Error 13|144s10 213s10
+93U14*Check 13|116s7
+103U14*Check 13|117s7 129s7 195s7 270s7 292s13
+127V13*Not_Implemented_Neg_One{10|60I9} 129i<c,nosys_neg_one>22
+131V13*Not_Implemented_Direct{10|60I9} 133i<c,nosys_direct>22
+135V13*Not_Supported_Neg_One{10|60I9} 137i<c,notsup_neg_one>22
+139V13*Not_Supported_Direct{10|60I9} 141i<c,notsup_direct>22
+159V13*Trim_Leading_Blank{string} 13|309s14
+X 12 posix-process_identification.ads
+38K15*Process_Identification 9|43k9 12|94E9 101l11 101e33 13|41b20 321l11
+. 321t33
+42I9*Process_ID<10|425I9> 43r31 44r33 45r35 46r42 47r25 50r14 58r23 61r24
+. 94c9 95r31 96r33 13|53r35 55r14 62r42 66r14 73r25 76r14 84r14 86r14 97r27
+. 113r17 125r17
+43i4*Null_Process_ID{42I9} 95c4 13|116r25
+44i4*System_Process_ID{42I9} 96c4
+45V13*Get_Process_ID{42I9} 58s37 13|53b13 56l8 56t22 102s23 113s31
+46V13*Get_Parent_Process_ID{42I9} 13|62b13 67l8 67t29
+47V13*Image{string} 47>20 13|73b13 77l8 77t13
+47i20 ID{42I9} 13|73b20 76r32
+49V13*Value{42I9} 49>20 13|83b13 87l8 87t13
+49a20 Str{string} 13|83b20 86r32
+54I9*Process_Group_ID<10|425I9> 56r14 59r23 62r27 63r51 64r25 67r14 98c9
+. 13|97r46 100r41 114r23 125r49 130r24 138r28 142r25 152r25 153r12 160r37
+. 162r14
+55V13*Get_Process_Group_ID{54I9} 59s43 13|100b13 103l8 103t28 114s43
+57U14*Set_Process_Group_ID 58>7 59>7 13|112b14 118l8 118t28
+58i7 Process{42I9} 13|113b7 116r14 117r30
+59i7 Process_Group{54I9} 13|114b7 117r47
+60U14*Create_Process_Group 61>7 62<7 13|124b14 131l8 131t28
+61i7 Process{42I9} 13|125b7 129r30 130r42
+62i7 Process_Group{54I9} 13|125b29 130m7
+63U14*Create_Session 63<30 13|137b14 146l8 146t22
+63i30 Session_Leader{54I9} 13|138b7 142m7 143r10
+64V13*Image{string} 64>20 13|152b13
+64i20 ID{54I9} 13|152b20
+66V13*Value{54I9} 66>20 13|159b13 163l8 163t13
+66a20 Str{string} 13|160b7 162r38
+71M9*User_ID<10|429M9> 72r37 73r42 74r32 76r25 77r50 99c9 13|169r37 173r14
+. 180r42 184r14 191r32 222r25 224r14 231r50 233r14
+72V13*Get_Real_User_ID{71M9} 13|169b13 174l8 174t24
+73V13*Get_Effective_User_ID{71M9} 13|180b13 185l8 185t29
+74U14*Set_User_ID 74>27 13|191b14 196l8 196t19
+74m27 ID{71M9} 13|191b27 195r36
+75V13*Get_Login_Name{9|183A9} 13|206b13 216l8 216t22
+76V13*Image{string} 76>20 13|222b13 225l8 225t13
+76m20 ID{71M9} 13|222b20 224r29
+77V13*Value{71M9} 77>20 13|231b13 234l8 234t13
+77a20 Str{string} 13|231b20 233r29
+81M9*Group_ID<10|427M9> 82r38 83r43 84r33 86r68 90r25 91r50 100c9 13|244r38
+. 248r14 255r43 259r14 266r33 277r39 307r25 309r34 316r50 318r14 318r24
+82V13*Get_Real_Group_ID{81M9} 13|244b13 249l8 249t25
+83V13*Get_Effective_Group_ID{81M9} 13|255b13 260l8 260t30
+84U14*Set_Group_ID 84>28 13|266b14 271l8 271t20
+84m28 ID{81M9} 13|266b28 270r29
+85I12*Group_List_Index{positive} 86r30
+86A9*Group_List(81M9)<integer> 89r31 13|279r31 287r30
+89V13*Get_Groups{86A9} 13|279b13 301l8 301t18
+90V13*Image{string} 90>20 13|307b13 310l8 310t13
+90m20 ID{81M9} 13|307b20 309r50
+91V13*Value{81M9} 91>20 13|316b13 319l8 319t13
+91a20 Str{string} 13|316b20 318r40
+X 13 posix-process_identification.adb
+50V13 getpid{10|425I9} 51b<c,getpid>22 55s26
+63V16*getppid{10|425I9} 64b<c,getppid>25 66s26
+97V13 getpgrp{12|54I9} 97>22 98b<c,getpgrp>22 102s14
+97i22 ID{12|42I9}
+109V13 setpgid{10|60I9} 109>22 109>35 110b<c,setpgid>22 117s14
+109i22 pid{10|425I9}
+109i35 pgrp{10|425I9}
+126V16*setpgid{10|60I9} 126>25 126>38 127b<c,setpgid>25 129s14
+126i25 pid{10|425I9}
+126i38 pgrp{10|425I9}
+139V16*setsid{10|425I9} 140b<c,setsid>25 142s43
+170V16*getuid{10|429M9} 171b<c,getuid>25 173s23
+181V16*geteuid{10|429M9} 182b<c,geteuid>25 184s23
+192V16*setuid{10|60I9} 192>24 193b<c,setuid>25 195s14
+192m24 uid{10|429M9} 195r22
+207V16*getlogin{10|99P9} 208b<c,getlogin>25 211s19
+209p7 Name_Ptr{10|99P9} 211m7 212r10 215r33
+245V16*getgid{10|427M9} 246b<c,getgid>25 248s24
+256V16*getegid{10|427M9} 257b<c,getegid>25 259s24
+267V16*setgid{10|60I9} 267>24 268b<c,setgid>25 270s14
+267m24 gid{10|427M9}
+277P9 Access_Group_ID(12|81M9) 281r40
+280V16*getgroups{10|60I9} 281>10 281>28 282b<c,getgroups>25 286s41 291s15
+281i10 gidsetsize{10|60I9}
+281p28 grouplist{277P9}
+286i13 NGroups_1{10|60I9} 287r56 293r16
+287a13 Groups{12|86A9} 291r26 291m41 291r41 294r23
+288i13 NGroups_2{10|60I9} 290m13 292r20 293r28
+
