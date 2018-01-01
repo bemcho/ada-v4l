@@ -2,160 +2,158 @@ with "deps/florist-gpl-2017-src/florist.gpr";
 
 project Adav4L is
 
-   for Object_Dir use "obj";
-   for Main use ("main.adb");
-   type Build_Type is
-      ("Debug", "Production");
-   Build : Build_Type := external ("Build");
-   type Library_Type_Type is
-      ("relocatable", "static");
-   Library_Type : Library_Type_Type := external ("LIBRARY_TYPE");
-   type Boolean is
-      ("False", "True");
-   Threads : Boolean := external ("THREADS");
+  for Object_Dir use "obj";
+  for Main use ("main.adb");
+  type Build_Type is
+    ("Debug", "Production");
+  Build : Build_Type := external ("Build");
+  type Library_Type_Type is
+    ("relocatable", "static");
+  Library_Type : Library_Type_Type := external ("LIBRARY_TYPE");
+  type Boolean is
+    ("False", "True");
+  Threads : Boolean := external ("THREADS");
 
-   case Build is
+  case Build is
+
+    when "Debug" =>
+
+    when "Production" =>
+
+      case Library_Type is
+
+        when "relocatable" =>
+
+          case Threads is
+
+            when "False" =>
+
+            when "True" =>
+              for Source_Dirs use ("src", "deps/include_v4l2", "deps");
+              for Runtime ("ada") use "native";
+          end case;
+      end case;
+  end case;
+
+  package Linker is
+
+    case Build is
 
       when "Debug" =>
 
+        case Library_Type is
+
+          when "relocatable" =>
+
+          when "static" =>
+
+            case Threads is
+
+              when "False" =>
+
+              when "True" =>
+                for Switches ("ada") use ("-lv4l2", "-g", "-g");
+            end case;
+        end case;
+
       when "Production" =>
 
-         case Library_Type is
+        case Library_Type is
 
-            when "relocatable" =>
+          when "relocatable" =>
 
-            when "static" =>
+          when "static" =>
 
-               case Threads is
+            case Threads is
 
-                  when "False" =>
+              when "False" =>
 
-                  when "True" =>
-                     for Source_Dirs use ("src", "deps/include_v4l2", "deps");
-                     for Runtime ("ada") use "native";
-               end case;
-         end case;
-   end case;
-
-   package Linker is
-
-      case Build is
-
-         when "Debug" =>
-
-            case Library_Type is
-
-               when "relocatable" =>
-
-               when "static" =>
-
-                  case Threads is
-
-                     when "False" =>
-
-                     when "True" =>
-                        for Switches ("ada") use ("-lv4l2", "-g", "-g");
-                  end case;
+              when "True" =>
+                for Switches ("ada") use ("-lv4l2", "-g", "-fprofile-generate", "-fprofile-generate", "-fprofile-generate", "-fprofile-generate", "-fprofile-generate");
             end case;
+        end case;
+    end case;
+  end Linker;
 
-         when "Production" =>
+  package Builder is
 
-            case Library_Type is
+    case Build is
 
-               when "relocatable" =>
+      when "Debug" =>
 
-               when "static" =>
+        case Library_Type is
 
-                  case Threads is
+          when "relocatable" =>
 
-                     when "False" =>
+          when "static" =>
 
-                     when "True" =>
-                        for Switches ("ada") use ("-lv4l2", "-g", "-fprofile-generate", "-fprofile-generate", "-fprofile-generate", "-fprofile-generate", "-fprofile-generate");
-                  end case;
+            case Threads is
+
+              when "False" =>
+
+              when "True" =>
+                for Switches ("ada") use ("-s", "-g");
             end case;
-      end case;
-   end Linker;
+        end case;
 
-   package Builder is
+      when "Production" =>
 
-      case Build is
+        case Library_Type is
 
-         when "Debug" =>
+          when "relocatable" =>
 
-            case Library_Type is
+          when "static" =>
 
-               when "relocatable" =>
+            case Threads is
 
-               when "static" =>
+              when "False" =>
 
-                  case Threads is
-
-                     when "False" =>
-
-                     when "True" =>
-                        for Switches ("ada") use ("-s", "-g");
-                  end case;
+              when "True" =>
+                for Switches ("ada") use ("-s", "-g");
             end case;
+        end case;
+    end case;
+  end Builder;
 
-         when "Production" =>
+  package Compiler is
 
-            case Library_Type is
+    case Build is
 
-               when "relocatable" =>
+      when "Debug" =>
 
-               when "static" =>
+        case Library_Type is
 
-                  case Threads is
+          when "relocatable" =>
 
-                     when "False" =>
+          when "static" =>
 
-                     when "True" =>
-                        for Switches ("ada") use ("-s", "-g");
-                  end case;
+            case Threads is
+
+              when "False" =>
+
+              when "True" =>
+                for Switches ("ada") use ("-g");
             end case;
-      end case;
-   end Builder;
+        end case;
 
-   package Compiler is
+      when "Production" =>
 
-      case Build is
+        case Library_Type is
 
-         when "Debug" =>
+          when "relocatable" =>
 
-            case Library_Type is
+          when "static" =>
 
-               when "relocatable" =>
+            case Threads is
 
-               when "static" =>
+              when "False" =>
 
-                  case Threads is
-
-                     when "False" =>
-
-                     when "True" =>
-                        for Switches ("ada") use ("-g");
-                  end case;
+              when "True" =>
+                for Switches ("ada") use ("-gnatyy2", "-gnatyy1", "-gnatVa", "-gnatwae.e", "-g", "-ftest-coverage", "-fprofile-arcs", "-fprofile-arcs", "-gnatf", "-fprofile-arcs", "-fprofile-arcs", "-fprofile-arcs");
             end case;
-
-         when "Production" =>
-
-            case Library_Type is
-
-               when "relocatable" =>
-
-               when "static" =>
-
-                  case Threads is
-
-                     when "False" =>
-
-                     when "True" =>
-                        for Switches ("ada") use ("-gnatyy2", "-gnatyy1", "-gnatVa", "-gnatwae.e", "-g", "-ftest-coverage", "-fprofile-arcs", "-fprofile-arcs", "-gnatf", "-fprofile-arcs", "-fprofile-arcs", "-fprofile-arcs");
-                  end case;
-            end case;
-      end case;
-   end Compiler;
+        end case;
+    end case;
+  end Compiler;
 
 end Adav4L;
 
